@@ -1,48 +1,62 @@
-# E-Market
-1. Edo Škaljo
-2. Amar Luèkin
-3. Kenan Saraèeviæ
+
+
+# **E-Market**
+![](https://photos-5.dropbox.com/t/2/AADVjCSykO1xyW6b_19QI7aeZQxN3RG9lmKvuup6v4FNNw/12/590805218/png/32x32/1/_/1/2/rsz_11online-grocery-shopping-pc.png/EMSkmOEEGCIgAigC/sr6mzCdYW7F0EXcBeX8nf4eysrNWGuCgPeAz4cF4Usw?preserve_transparency=1&size=1280x960&size_mode=3)
+
+## ÄŒlanovi tima:
+
+1. Edo Å kaljo
+2. Amar LuÄkin
+3. Kenan SaraÄeviÄ‡
 
 ## Opis teme:
-E-Market je aplikacija koja korisniku omoguæava da pregleda katalog artikala svakog supermarketa u svojoj okolini.
+E-Market je aplikacija koja korisniku omoguÄ‡ava da pregleda katalog artikala svakog supermarketa u svojoj okolini.
 Svrha aplikacije je promocija artikala supermarketa putem online kataloga.
-Ova aplikacija korisniku omoguæava da pregleda cijene svih artikala u svim supermarketima, kao i da sastavi svoju vlastitu shopping listu pomoæu koje æe mu sistem predloiti najpovoljniju lokaciju za kupovinu.
-Aplikacija prua vlasniku supermarketa novi naèin promocije promotivnih cijena kao i jednostavnije pruanje informacija kupcima o svojim artiklima.
+Ova aplikacija korisniku omoguÄ‡ava da pregleda cijene svih artikala u svim supermarketima, kao i da sastavi svoju vlastitu shopping listu pomoÄ‡u koje Ä‡e mu sistem predloÅ¾iti najpovoljniju lokaciju za kupovinu.
+Aplikacija pruÅ¾a vlasniku supermarketa novi naÄin promocije promotivnih cijena kao i jednostavnije pruÅ¾anje informacija kupcima o svojim artiklima.
 
 # Procesi
 ## Registracija klijenta
-Korisnik unosi svoje liène podatke meğu kojima se nalazi i mjesto stanovanja koje omoguæava sistemu da pronağe supermarkete koji su u okruenju mjesta stanovanja korisnika.
+Korisnik unosi svoje liÄne podatke meÄ‘u kojima se nalazi i mjesto stanovanja koje omoguÄ‡ava sistemu da pronaÄ‘e supermarkete koji su u okruÅ¾enju mjesta stanovanja korisnika.
 ## Pretraga po artiklu
-Korisnik unosi lokaciju u èijem okruenju eli pretraiti proizvod, zatim unosi ime artikla. Sistem izlistava sve artikle koje sadre traeni naziv iz svakog supermarketa. Proizvodi su sortirani po cijenu poèevši od najmanje.
+Korisnik unosi lokaciju u Äijem okruÅ¾enju Å¾eli pretraÅ¾iti proizvod, zatim unosi ime artikla. Sistem izlistava sve artikle koje sadrÅ¾e traÅ¾eni naziv iz svakog supermarketa. Proizvodi su sortirani po cijeni poÄevÅ¡i od najmanje.
 ## Pretraga po supermarketu (katalog)
-Korisnik unosi lokaciju u èijem okruenju eli pretraiti proizvod, zatim bira supermarket èiji katalog eli da pretrauje. Sistem izlistava sve ponuğene artikle iz odabranog supermarketa, dok korisnik ima moguænost unijeti ime artikla èime bi skratio vrijeme pretrage. Za svaki artikal je ispisana cijena i kolièina.
+Korisnik unosi lokaciju u Äijem okruÅ¾enju Å¾eli pretraÅ¾iti proizvod, zatim bira supermarket Äiji katalog Å¾eli da pretraÅ¾uje. Sistem izlistava sve ponuÄ‘ene artikle iz odabranog supermarketa, dok korisnik ima moguÄ‡nost unijeti ime artikla Äime bi skratio vrijeme pretrage. Za svaki artikal je ispisana cijena i koliÄina.
 ## Sastavljanje spiska
-Korisnik unosi lokaciju u èijem okruenju eli pretraiti proizvod, zatim unosi ime artikla. Sistem izlistava sve artikle koji sadre traeno ime, pa korisnik bira artikal i kolièinu i dodaje na svoj spisak. Nakon što je spisak završen korisnik dobiva listu preporuèenih supermarketa u okolini traene lokacije sortirani po ukupnoj vrijednosti raèuna poèevši od najmanje. Ukoliko ne postoji supermarket koji zadovoljava korisnikov spisak, izlistavaju se supermarketi koji priblino zadovoljavaju spisak.
+Korisnik unosi lokaciju u Äijem okruÅ¾enju Å¾eli pretraÅ¾iti proizvod, zatim unosi ime artikla. Sistem izlistava sve artikle koji sadrÅ¾e traÅ¾eno ime, pa korisnik bira artikal i koliÄinu i dodaje na svoj spisak. Nakon Å¡to je spisak zavrÅ¡en korisnik dobiva listu preporuÄenih supermarketa u okolini traÅ¾ene lokacije sortirani po ukupnoj vrijednosti raÄuna poÄevÅ¡i od najmanje. Ukoliko ne postoji supermarket koji zadovoljava korisnikov spisak, izlistavaju se supermarketi koji pribliÅ¾no zadovoljavaju spisak.
 ## Registracija uposlenika supermarketa
-Korisnik unosi svoje liène podatke, kontakt informacije i informacije o pripadajuæem supermarketu.
+Korisnik unosi svoje liÄne podatke, kontakt informacije i informacije o pripadajuÄ‡em supermarketu.
 ## Dodavanje artikla u katalog
-Uposlenik supermarketa upisuje podatke o artiklu i mora odabrati pripadajuæi artikal iz baze podataka sistema, ukoliko ne postoji traeni artikal šalje zahtjev za dodavanje artikla na spisak u bazi podataka.
+Uposlenik supermarketa upisuje podatke o artiklu i mora odabrati pripadajuÄi artikal iz baze podataka sistema, ukoliko ne postoji traÅ¾eni artikal Å¡alje zahtjev za dodavanje artikla na spisak u bazi podataka.
 ## Slanje zahtjeva
-Uposlenik supermarketa opisuje artikal koji eli dodati u svoj katalog, zahtjev se šalje administratoru sistema. Administratog prima zahtjev i odluèi da li da prihvati ili odbije zahtjev, nakon èega se šalje obavijest uposleniku supermarketa o odluci administratora. Ukoliko je zahtjev odobren, administrator je dodao artikal u bazu podataka, a korisnik moe ponovno pokušati dodati artikal u katalog supermarketa.
+Uposlenik supermarketa opisuje artikal koji Å¾eli dodati u svoj katalog, zahtjev se Å¡alje administratoru sistema. Administratog prima zahtjev i odluÄi da li da prihvati ili odbije zahtjev, nakon Äega se Å¡alje obavijest uposleniku supermarketa o odluci administratora. Ukoliko je zahtjev odobren, administrator je dodao artikal u bazu podataka, a korisnik moÅ¾e ponovno pokuÅ¡ati dodati artikal u katalog supermarketa.
 
 # Funkcionalnosti
-- Moguænost prijave na aplikaciju
-- CRUD moguænost za svaku ulogu
-- Moguænost pretrage po imenu artikla
-- Moguænost pretrage katalog supermarketa
+- MoguÄ‡nost registracije na aplikaciju
+- MoguÄ‡nost prijave na aplikaciju
+- MoguÄ‡nost brisanja korisniÄkog naloga
+- CRUD moguÄ‡nost za svaku ulogu
+- MoguÄ‡nost pretrage po imenu artikla
+- MoguÄ‡nost pretrage kataloga supermarketa
 - Sastavljanje vlastitog spiska za kupovinu
-- Slanje obavještenja o akcijskim cijenama
+- MoguÄ‡nost dodavanja novih supermarketa
+- MoguÄ‡nost biranja izmeÄ‘u razliÄitih prijevoznih sredstava
+- Automatsko aÅ¾uriranje koliÄine proizvoda u supermarketima 
+- Transparetna pristupnost bazi podataka supermarketa
+- Slanje obavjeÅ¡tenja o akcijskim cijenama
 - Dodavanje novog artikla u katalog
 - Brisanje artikla iz kataloga
 - Promjena cijene artikla
-- Promjena kolièine artikla
+- Promjena koliÄine artikla
 - Prikaz broja pregleda kataloga supermarketa
-- Pretraga supermarketa putem GPS ureğaja
-(ovdje treba još dodati funkcionalnosti, proèitati projektni zadatak 2)
+- Pretraga supermarketa putem GPS ureÄ‘aja
+(ovdje treba joÅ¡ dodati funkcionalnosti, proÄitati projektni zadatak 2)
 
 # Akteri
-1. Klijent - Osoba koja koristi aplikaciju radi informacija oko supermarketa u svojoj okolini, kao i artikala u njihovom katalogu. Ima moguænost kreiranja vlastitog spiska kupovine pomoæu kojeg ga aplikacija obavještava o najpovoljnijim kupovnim mjestima.
+1. Klijent - Osoba koja koristi aplikaciju radi informacija oko supermarketa u svojoj okolini, kao i artikala u njihovom katalogu. Ima moguÄ‡nost kreiranja vlastitog spiska kupovine pomoÄ‡u kojeg ga aplikacija obavjeÅ¡tava o najpovoljnijim kupovnim mjestima.
 
 2. Uposlenik supermarketa - Osoba koja radi za supermarket i upravlja katalogom i artiklima supermarketa.
 
-3. Administrator - Osoba koja upravlja bazom podataka artikala, dodaje ili uklanja artikle. Takoğer, obrağuje zahtjeve za dodavanje novih artikala u bazu podataka.
+3. MenadÅ¾er supermarketa - Osoba koja radi za (odreÄ‘eni) supermarket i koja dodaje novootvorene supermarkete i njihovu lokaciju na listu veÄ‡ postojeÄ‡ih supermarketa.
+
+4. Administrator - Osoba koja upravlja bazom podataka artikala, dodaje ili uklanja artikle. TakoÄ‘er, obraÄ‘uje zahtjeve za dodavanje novih artikala u bazu podataka.
