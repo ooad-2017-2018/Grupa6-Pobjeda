@@ -1,7 +1,7 @@
 
 
 # **E-Market**
-![](https://photos-5.dropbox.com/t/2/AADVjCSykO1xyW6b_19QI7aeZQxN3RG9lmKvuup6v4FNNw/12/590805218/png/32x32/1/_/1/2/rsz_11online-grocery-shopping-pc.png/EMSkmOEEGCIgAigC/sr6mzCdYW7F0EXcBeX8nf4eysrNWGuCgPeAz4cF4Usw?preserve_transparency=1&size=1280x960&size_mode=3)
+![alt tag](/e-market.png "e-market")
 
 ## Članovi tima:
 
@@ -28,8 +28,8 @@ Korisnik unosi lokaciju u čijem okruženju želi pretražiti proizvod, zatim un
 Korisnik unosi svoje lične podatke, kontakt informacije i informacije o pripadajućem supermarketu.
 ## Dodavanje artikla u katalog
 Uposlenik supermarketa upisuje podatke o artiklu i mora odabrati pripadajuči artikal iz baze podataka sistema, ukoliko ne postoji traženi artikal šalje zahtjev za dodavanje artikla na spisak u bazi podataka.
-## Slanje zahtjeva
-Uposlenik supermarketa opisuje artikal koji želi dodati u svoj katalog, zahtjev se šalje administratoru sistema. Administratog prima zahtjev i odluči da li da prihvati ili odbije zahtjev, nakon čega se šalje obavijest uposleniku supermarketa o odluci administratora. Ukoliko je zahtjev odobren, administrator je dodao artikal u bazu podataka, a korisnik može ponovno pokušati dodati artikal u katalog supermarketa.
+## Odobravanje zahtjeva
+Uposlenik supermarketa opisuje artikal koji želi dodati u svoj katalog, zahtjev se šalje menadžeru tog supermarketa. Menadžer prima zahtjev i odluči da li da će prihvati ili odbiti zahtjev, nakon čega se šalje obavijest uposleniku supermarketa o odluci menadžera. Ukoliko je zahtjev odobren, administrator je dodao artikal u bazu podataka, a korisnik može ponovno pokušati dodati artikal u katalog supermarketa.
 
 # Funkcionalnosti
 - Mogućnost registracije na aplikaciju
@@ -57,6 +57,6 @@ Uposlenik supermarketa opisuje artikal koji želi dodati u svoj katalog, zahtjev
 
 2. Uposlenik supermarketa - Osoba koja radi za supermarket i upravlja katalogom i artiklima supermarketa.
 
-3. Menadžer supermarketa - Osoba koja radi za (određeni) supermarket i koja dodaje novootvorene supermarkete i njihovu lokaciju na listu već postojećih supermarketa.
+3. Menadžer supermarketa - Osoba koja radi za (određeni) supermarket i koja dodaje novootvorene supermarkete i njihovu lokaciju na listu već postojećih supermarketa. Također uz administratora odobrava registraciju novih radnika za korištenje aplikacije.
 
 4. Administrator - Osoba koja upravlja bazom podataka artikala, dodaje ili uklanja artikle. Također, obrađuje zahtjeve za dodavanje novih artikala u bazu podataka.
