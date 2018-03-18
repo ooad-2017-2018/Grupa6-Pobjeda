@@ -1,4 +1,4 @@
-
+﻿
 
 # **E-Market**
 ![alt tag](/e-market.png "e-market")
@@ -25,32 +25,33 @@ Korisnik unosi lokaciju u čijem okruženju želi pretražiti proizvod, zatim bi
 ## Sastavljanje spiska
 Korisnik unosi lokaciju u čijem okruženju želi pretražiti proizvod, zatim unosi ime artikla. Sistem izlistava sve artikle koji sadrže traženo ime, pa korisnik bira artikal i količinu i dodaje na svoj spisak. Nakon što je spisak završen korisnik dobiva listu preporučenih supermarketa u okolini tražene lokacije sortirani po ukupnoj vrijednosti računa počevši od najmanje. Ukoliko ne postoji supermarket koji zadovoljava korisnikov spisak, izlistavaju se supermarketi koji približno zadovoljavaju spisak.
 ## Registracija uposlenika supermarketa
-Korisnik unosi svoje lične podatke, kontakt informacije i informacije o pripadajućem supermarketu.
+Korisnik unosi svoje lične podatke, kontakt informacije i informacije o pripadajućem supermarketu, zahtjev za potvrdu uposlenika se šalje menadžeru pripadajućeg supermarketa. Ukoliko je zahtjev odobren, šalje se zahtjev za registraciju administratoru. Ukoliko je zahtjev odobren, korisnik dobiva privilegije uposlenika supermarketa.
+## Registracija menadžera supermarketa
+Korisnik unosi svoje lične podatke, kontakt informacije i informacije o pripadajućem supermarketu, zahtjev za registraciju se šalje administratoru. Ukoliko je zahtjev odobren, korisnik dobiva privilegije menadžera supermarketa.
 ## Dodavanje artikla u katalog
 Uposlenik supermarketa upisuje podatke o artiklu i mora odabrati pripadajuči artikal iz baze podataka sistema, ukoliko ne postoji traženi artikal šalje zahtjev za dodavanje artikla na spisak u bazi podataka.
 ## Odobravanje zahtjeva
-Uposlenik supermarketa opisuje artikal koji želi dodati u svoj katalog, zahtjev se šalje menadžeru tog supermarketa. Menadžer prima zahtjev i odluči da li da će prihvati ili odbiti zahtjev, nakon čega se šalje obavijest uposleniku supermarketa o odluci menadžera. Ukoliko je zahtjev odobren, administrator je dodao artikal u bazu podataka, a korisnik može ponovno pokušati dodati artikal u katalog supermarketa.
+Uposlenik supermarketa opisuje artikal koji želi dodati u svoj katalog, zahtjev se šalje menadžeru tog supermarketa. Menadžer prima zahtjev i odluči da li da će prihvatiti ili odbiti zahtjev, nakon čega šalje zahtjev administratoru za unos artikla. Administrator prima zahtjev i unosi artikal u listu artikala, nakon čega se šalje obavijest uposleniku supermarketa o unosu artikla i odluci menadžera. Ukoliko je zahtjev odobren, administrator je dodao artikal u bazu podataka, a korisnik može ponovno pokušati dodati artikal u katalog supermarketa.
 
 # Funkcionalnosti
-- Mogućnost registracije na aplikaciju
-- Mogućnost prijave na aplikaciju
+- Mogućnost registracije na aplikaciju sa različitim ulogama
+- Mogućnost prijave na aplikaciju sa različitim ulogama
 - Mogućnost brisanja korisničkog naloga
 - CRUD mogućnost za svaku ulogu
 - Mogućnost pretrage po imenu artikla
 - Mogućnost pretrage kataloga supermarketa
 - Sastavljanje vlastitog spiska za kupovinu
-- Mogućnost dodavanja novih supermarketa
+- Mogućnost dodavanja novih supermarketa kao menadžer
 - Mogućnost biranja između različitih prijevoznih sredstava
-- Automatsko ažuriranje količine proizvoda u supermarketima 
 - Transparetna pristupnost bazi podataka supermarketa
 - Slanje obavještenja o akcijskim cijenama
-- Dodavanje novog artikla u katalog
-- Brisanje artikla iz kataloga
-- Promjena cijene artikla
-- Promjena količine artikla
-- Prikaz broja pregleda kataloga supermarketa
+- Dodavanje i brisanje artikla u/iz katalog/a
+- Ažuriranje cijene/količine artikla kao uposlenik supermarketa
+- Mogućnost printanja spiska za kupovinu
+- Like mogućnost za svaki supermarket
+- Prikaz broja like-ova kataloga supermarketa
 - Pretraga supermarketa putem GPS uređaja
-(ovdje treba još dodati funkcionalnosti, pročitati projektni zadatak 2)
+
 
 # Akteri
 1. Klijent - Osoba koja koristi aplikaciju radi informacija oko supermarketa u svojoj okolini, kao i artikala u njihovom katalogu. Ima mogućnost kreiranja vlastitog spiska kupovine pomoću kojeg ga aplikacija obavještava o najpovoljnijim kupovnim mjestima.
