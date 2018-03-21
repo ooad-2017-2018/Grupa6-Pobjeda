@@ -36,7 +36,7 @@ Uposlenik supermarketa opisuje artikal koji želi dodati u svoj katalog, zahtjev
 # Funkcionalnosti
 - Mogućnost registracije na aplikaciju sa različitim ulogama
 - Mogućnost prijave na aplikaciju sa različitim ulogama
-- Mogućnost brisanja korisničkog naloga
+- Mogućnost deaktiviranja korisničkog naloga
 - CRUD mogućnost za svaku ulogu
 - Mogućnost pretrage po imenu artikla
 - Mogućnost pretrage kataloga supermarketa
