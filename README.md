@@ -42,7 +42,6 @@ Uposlenik supermarketa opisuje artikal koji želi dodati u svoj katalog, zahtjev
 - Mogućnost pretrage kataloga supermarketa
 - Kreiranje vlastitog spiska za kupovinu
 - Mogućnost dodavanja novih supermarketa kao menadžer
-- Mogućnost biranja između različitih prijevoznih sredstava
 - Slanje obavještenja o akcijskim cijenama
 - Dodavanje i brisanje artikla u/iz katalog/a
 - Ažuriranje cijene/količine artikla kao uposlenik supermarketa

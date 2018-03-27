@@ -49,7 +49,7 @@
 					<ContainedElements>
 						<InitialNode Idref="uyI4WkaGAqACbgsN" Name=""/>
 						<ActivityFinalNode Idref="rzo4WkaGAqACbgsV" Name=""/>
-						<ActivityAction Idref="wYK4WkaGAqACbgsd" Name="Login"/>
+						<ActivityAction Idref="wYK4WkaGAqACbgsd" Name="Prijava"/>
 						<ActivityAction Idref="vSm4WkaGAqACbgsp" Name="Odabir opcije za pretragu po supermarketu"/>
 						<ActivityAction Idref="KoF4WkaGAqACbgtL" Name="Unos lokacije"/>
 						<ActivityAction Idref="I0H4WkaGAqACbguN" Name="Odabir supermarketa"/>
@@ -83,7 +83,7 @@
 						<ActivityFinalNode Idref="rzo4WkaGAqACbgsU" Name=""/>
 					</MasterView>
 				</ActivityFinalNode>
-				<ActivityAction BacklogActivityId="0" Documentation_plain="" Id="wYK4WkaGAqACbgsd" Leaf="false" MustIsolate="false" Name="Login" PmAuthor="Edo Skaljo" PmCreateDateTime="2018-03-24T23:24:49.539" PmLastModified="2018-03-24T23:26:36.719" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
+				<ActivityAction BacklogActivityId="0" Documentation_plain="" Id="wYK4WkaGAqACbgsd" Leaf="false" MustIsolate="false" Name="Prijava" PmAuthor="Edo Skaljo" PmCreateDateTime="2018-03-24T23:24:49.539" PmLastModified="2018-03-27T08:45:37.028" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
 					<FromSimpleRelationships>
 						<ControlFlow Idref="1vp4WkaGAqACbgtC" Name=""/>
 					</FromSimpleRelationships>
@@ -91,7 +91,7 @@
 						<ControlFlow Idref="uJ64WkaGAqACbgsk" Name=""/>
 					</ToSimpleRelationships>
 					<MasterView>
-						<ActivityAction Idref="QYK4WkaGAqACbgsc" Name="Login"/>
+						<ActivityAction Idref="QYK4WkaGAqACbgsc" Name="Prijava"/>
 					</MasterView>
 				</ActivityAction>
 				<ActivityAction BacklogActivityId="0" Documentation_plain="" Id="vSm4WkaGAqACbgsp" Leaf="false" MustIsolate="false" Name="Odabir opcije za pretragu po supermarketu" PmAuthor="Edo Skaljo" PmCreateDateTime="2018-03-24T23:25:10.845" PmLastModified="2018-03-24T23:26:36.721" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
@@ -196,7 +196,7 @@
 		</ModelRelationshipContainer>
 	</Models>
 	<Diagrams>
-		<ActivityDiagram AlignToGrid="false" AutoFitShapesSize="false" ConnectionPointStyle="0" ConnectorLabelOrientation="0" ConnectorLineJumps="0" ConnectorLineJumpsSize="0" ConnectorModelElementNameAlignment="4" ConnectorStyle="1" ControlFlowDisplayOption="0" DecisionMergeNodeConnectionPointStyle="1" DiagramBackground="rgb(255, 255, 255)" Editable="true" FollowDiagramParentElement="true" GridColor="rgb(192, 192, 192)" GridHeight="10" GridVisible="false" GridWidth="10" Height="583" HideConnectorIfFromToIsHidden="0" HideEmptyTaggedValues="false" Id="am3YWkaGAqACbgrf" ImageHeight="0" ImageScale="1.0" ImageWidth="0" InitializeDiagramForCreate="true" Maximized="true" ModelElementNameAlignment="4" Name="PretragaPoSupermarketu" ObjectNodeShowInStates="2" ObjectNodeShowType="true" PaintConnectorThroughLabel="1" PmAuthor="Edo Skaljo" PmCreateDateTime="2018-03-24T23:23:08.374" PmLastModified="2018-03-24T23:31:16.674" PointConnectorEndToCompartmentMember="true" QualityScore="-1" RequestFitSizeWithPromptUser="false" RequestValidateSnapToGrid="false" ShapePresentationOption="0" ShowActionCallBehaviorOption="1" ShowActivityEdgeWeight="true" ShowActivityStateNodeCaption="524287" ShowAllocatedFrom="true" ShowAllocatedTo="true" ShowColorLegend="false" ShowConnectorName="0" ShowConstraints="false" ShowDefaultPackage="false" ShowInformationItemOption="2" ShowPMAuthor="false" ShowPMDifficulty="false" ShowPMDiscipline="false" ShowPMIteration="false" ShowPMPhase="false" ShowPMPriority="false" ShowPMStatus="false" ShowPMVersion="false" ShowPackageNameStyle="0" ShowPartitionHeader="0" ShowShapeLegend="false" ShowShapeStereotypeIconName="true" ShowStereotypes="true" ShowTaggedValues="false" TeamworkCreateDateTime="0" TrimmedHeight="0" TrimmedWidth="0" Width="1340" X="0" Y="0" ZoomRatio="1.0" _globalPaletteOption="true">
+		<ActivityDiagram AlignToGrid="false" AutoFitShapesSize="false" ConnectionPointStyle="0" ConnectorLabelOrientation="0" ConnectorLineJumps="0" ConnectorLineJumpsSize="0" ConnectorModelElementNameAlignment="4" ConnectorStyle="1" ControlFlowDisplayOption="0" DecisionMergeNodeConnectionPointStyle="1" DiagramBackground="rgb(255, 255, 255)" Editable="true" FollowDiagramParentElement="true" GridColor="rgb(192, 192, 192)" GridHeight="10" GridVisible="false" GridWidth="10" Height="583" HideConnectorIfFromToIsHidden="0" HideEmptyTaggedValues="false" Id="am3YWkaGAqACbgrf" ImageHeight="0" ImageScale="1.0" ImageWidth="0" InitializeDiagramForCreate="true" Maximized="true" ModelElementNameAlignment="4" Name="PretragaPoSupermarketu" ObjectNodeShowInStates="2" ObjectNodeShowType="true" PaintConnectorThroughLabel="1" PmAuthor="Edo Skaljo" PmCreateDateTime="2018-03-24T23:23:08.374" PmLastModified="2018-03-27T08:45:33.811" PointConnectorEndToCompartmentMember="true" QualityScore="-1" RequestFitSizeWithPromptUser="false" RequestValidateSnapToGrid="false" ShapePresentationOption="0" ShowActionCallBehaviorOption="1" ShowActivityEdgeWeight="true" ShowActivityStateNodeCaption="524287" ShowAllocatedFrom="true" ShowAllocatedTo="true" ShowColorLegend="false" ShowConnectorName="0" ShowConstraints="false" ShowDefaultPackage="false" ShowInformationItemOption="2" ShowPMAuthor="false" ShowPMDifficulty="false" ShowPMDiscipline="false" ShowPMIteration="false" ShowPMPhase="false" ShowPMPriority="false" ShowPMStatus="false" ShowPMVersion="false" ShowPackageNameStyle="0" ShowPartitionHeader="0" ShowShapeLegend="false" ShowShapeStereotypeIconName="true" ShowStereotypes="true" ShowTaggedValues="false" TeamworkCreateDateTime="0" TrimmedHeight="0" TrimmedWidth="0" Width="1340" X="0" Y="0" ZoomRatio="1.0" _globalPaletteOption="true">
 			<Shapes>
 				<ActivitySwimlane2 Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" Foreground="rgb(0, 0, 0)" Height="485" Id="epfYWkaGAqACbgrq" MetaModelElement=".pfYWkaGAqACbgrr" Model=".pfYWkaGAqACbgrr" ModelElementNameAlignment="9" Name="Swimlane" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitPartitionHeadersHeight="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowStereotypeIconName="0" ValidatePartitionsForConvert="false" Width="354" X="341" Y="21" ZOrder="26">
 					<VerticalPartitionIds>
@@ -278,7 +278,7 @@
 									<Caption Height="57" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="Center" Visible="true" Width="130" X="0" Y="0"/>
 									<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
 								</ActivityAction>
-								<ActivityAction Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" Foreground="rgb(0, 0, 0)" Height="40" Id="QYK4WkaGAqACbgsc" MetaModelElement="wYK4WkaGAqACbgsd" Model="wYK4WkaGAqACbgsd" ModelElementNameAlignment="9" Name="Login" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowCallBehaviorOption="0" ShowStereotypeIconName="0" Width="60" X="396" Y="88" ZOrder="12">
+								<ActivityAction Background="rgb(122, 207, 245)" ConnectToPoint="true" ConnectionPointType="2" Foreground="rgb(0, 0, 0)" Height="40" Id="QYK4WkaGAqACbgsc" MetaModelElement="wYK4WkaGAqACbgsd" Model="wYK4WkaGAqACbgsd" ModelElementNameAlignment="9" Name="Prijava" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowCallBehaviorOption="0" ShowStereotypeIconName="0" Width="60" X="396" Y="88" ZOrder="12">
 									<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
 									<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
 										<Stroke/>
