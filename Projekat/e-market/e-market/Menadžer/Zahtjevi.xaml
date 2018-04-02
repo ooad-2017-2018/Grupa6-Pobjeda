@@ -7,11 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Stroke="Black" HorizontalAlignment="Left" Height="632" Margin="119,88,0,0" VerticalAlignment="Top" Width="425"/>
-        <Button FontSize="30" Content="Nazad" HorizontalAlignment="Left" Margin="146,851,0,0" VerticalAlignment="Top" Height="60" Width="144"/>
-        <Button FontSize="30"  Content="Odobri zahtjev" HorizontalAlignment="Left" Margin="314,788,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
-        <Button FontSize="30"  Content="Odbij zahtjev" HorizontalAlignment="Left" Margin="314,921,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="1000">
+        <ListBox x:Name="listaZahtjeva" HorizontalAlignment="Left" Height="720" Margin="50,50,0,0" VerticalAlignment="Top" Width="500"/>
+        <Button FontSize="30" Content="Nazad" HorizontalAlignment="Left" Margin="50,900,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
+        <Button FontSize="30"  Content="Odobri zahtjev" HorizontalAlignment="Left" Margin="314,800,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
+        <Button FontSize="30"  Content="Odbij zahtjev" HorizontalAlignment="Left" Margin="314,900,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
 
     </Grid>
 </Page>

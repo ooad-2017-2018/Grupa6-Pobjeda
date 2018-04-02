@@ -7,9 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-177,-429">
-        <Rectangle Stroke="Black" HorizontalAlignment="Left" Height="193" Margin="58,64,0,0" VerticalAlignment="Top" Width="255"/>
-        <Button Content="Nazad" FontSize="100" HorizontalAlignment="Left" Margin="58,414,0,0" VerticalAlignment="Top" Width="301"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="1000">
+        <ListBox x:Name="listaZahtjeva" HorizontalAlignment="Left" Height="720" Margin="50,50,0,0" VerticalAlignment="Top" Width="500"/>
+        <Button Content="Nazad" FontSize="50" HorizontalAlignment="Left" Margin="165,0,0,100" VerticalAlignment="Bottom" Width="300"/>
 
     </Grid>
 </Page>

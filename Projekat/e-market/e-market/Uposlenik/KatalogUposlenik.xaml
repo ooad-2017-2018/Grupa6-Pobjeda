@@ -20,7 +20,8 @@
             <Button x:Name="izmijeniKolicinu" Content="Izmijeni kolicinu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,426,0,0" FontSize="36" Width="280" Height="60"/>
             <Button x:Name="izbrisiArtikal" Content="Izbrisi artikal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,610,0,0" FontSize="36" Width="280" Height="60"/>
             <TextBox x:Name="noviNaziv" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,60,20,0" Width="340" Height="60" />
-            
+            <TextBox x:Name="cijenaTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,243,20,0" Width="340" Height="60" />
+            <TextBox x:Name="kolicinaTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,426,20,0" Width="340" Height="60" />
         </Grid>
     </Grid>
 </Page>

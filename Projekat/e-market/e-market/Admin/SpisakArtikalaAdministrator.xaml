@@ -7,13 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.389,0.504">
-        <Rectangle Stroke="Black" HorizontalAlignment="Left" Height="100" Margin="176,91,0,0" VerticalAlignment="Top" Width="733"/>
-        <Button Content="Pretraga" Height="100" FontSize="60" HorizontalAlignment="Left" Margin="421,236,0,0" VerticalAlignment="Top"/>
-        <Button Content="Dodaj novi artikal" Height="100" FontSize="60" HorizontalAlignment="Left" Margin="300,376,0,0" VerticalAlignment="Top"/>
-        <Button Content="Izbrisi artikal" Height="100" FontSize="60" HorizontalAlignment="Left" Margin="367,524,0,0" VerticalAlignment="Top"/>
-        <Button Content="Nazad" Height="100" FontSize="60" HorizontalAlignment="Left" Margin="448,665,0,0" VerticalAlignment="Top"/>
-        <Rectangle Stroke="Black" HorizontalAlignment="Left" Height="674" Margin="1016,91,0,0" VerticalAlignment="Top" Width="408"/>
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1500" Height="900">
+        <TextBox x:Name="pretragaTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,150,0,0" Height="60" Width="550"/>
+        <Button Content="Pretraga" Height="80" Width="410" FontSize="50" HorizontalAlignment="Left" Margin="340,270,0,0" VerticalAlignment="Top"/>
+        <Button Content="Dodaj novi artikal" Height="80" Width="410" FontSize="50" HorizontalAlignment="Left" Margin="340,410,0,0" VerticalAlignment="Top"/>
+        <Button Content="Izbrisi artikal" Height="80" Width="410" FontSize="50" HorizontalAlignment="Left" Margin="340,550,0,0" VerticalAlignment="Top"/>
+        <Button Content="Nazad" Height="80" FontSize="50" Width="410" HorizontalAlignment="Left" Margin="340,690,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listaArtikala" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,70,100,0" Width="400" Height="780"/>
     </Grid>
 </Page>

@@ -7,36 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.5,0.5" Margin="0,0,4,1" UseLayoutRounding="False" d:LayoutRounding="Auto">
-        <Grid.Resources>
-            <Style TargetType="TextBlock">
-                <Setter Property="FontSize" Value="50"/>
-            </Style>
-            <Style TargetType="TextBox">
-                <Setter Property="FontSize" Value="20"/>
-            </Style>
-            <Style TargetType="Button">
-                <Setter Property="FontSize" Value="50"/>
-            </Style>
-        </Grid.Resources>
-        <Grid.RenderTransform>
-            <CompositeTransform Rotation="0.094"/>
-        </Grid.RenderTransform>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1400" Height="1000">
 
-
-
-        <TextBlock HorizontalAlignment="Left" Margin="508,230,0,0" Text="Korisničko ime: " TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="340"/>
-        <TextBlock HorizontalAlignment="Left
-                   " Margin="662,302,594,0" Text="Lozinka: " TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="911,230,0,0" Text="Unesite korisničko ime" VerticalAlignment="Top" Height="67" Width="366"/>
-        <TextBox HorizontalAlignment="Left" Margin="911,302,0,0" Text="Unesite lozinku" VerticalAlignment="Top" Height="67" Width="366"/>
-        <Button Content="Prijava" HorizontalAlignment="Left" Margin="508,456,0,0" VerticalAlignment="Top"/>
-        <Button Content="Izlaz" HorizontalAlignment="Left" Margin="1112,456,0,0" VerticalAlignment="Top" Width="165"/>
-        <Rectangle Stroke="Black" HorizontalAlignment="Left" Height="210" Margin="508,596,0,0" VerticalAlignment="Top" Width="831"/>
-        <TextBlock HorizontalAlignment="Left" Margin="782,596,0,0" Text="Registracija" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button Content="Klijent" HorizontalAlignment="Left" Margin="538,688,0,0" VerticalAlignment="Top"/>
-        <Button Content="SP Uposlenik" HorizontalAlignment="Left" Margin="725,688,0,0" VerticalAlignment="Top"/>
-        <Button Content="Menadzer" HorizontalAlignment="Left" Margin="1062,688,0,0" VerticalAlignment="Top"/>
-
+        <TextBlock HorizontalAlignment="Left" Margin="350,250,0,0" Text="Korisničko ime: " Height="60" FontSize="36" VerticalAlignment="Top" Width="250"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,350,594,0" Text="Lozinka: " Height="60" VerticalAlignment="Top" FontSize="36" Width="140"/>
+        <TextBox HorizontalAlignment="Left" Margin="630,250,0,0" VerticalAlignment="Top" Height="60" Width="400"/>
+        <TextBox HorizontalAlignment="Left" Margin="630,350,0,0" VerticalAlignment="Top" Height="60" Width="400"/>
+        <Button Content="Prijava" HorizontalAlignment="Left" Margin="350,500,0,0" VerticalAlignment="Top" Width="250" Height="60" FontSize="36"/>
+        <Button Content="Izlaz" HorizontalAlignment="Left" Margin="780,500,0,0" VerticalAlignment="Top" Width="250" Height="60" FontSize="36"/>
+        <Grid BorderBrush="Black" BorderThickness="4" Padding="12" CornerRadius="12" HorizontalAlignment="Left" Height="210" Margin="1050,740,0,0" VerticalAlignment="Top" Width="300">
+            <Button x:Name="klijentButton" Content="Klijent" HorizontalAlignment="Left" Margin="65,30,0,0" VerticalAlignment="Top" Width="150"/>
+            <Button x:Name="spUposlenikButton" Content="SP Uposlenik" HorizontalAlignment="Left" Margin="65,80,0,0" VerticalAlignment="Top" Width="150"/>
+            <Button x:Name="menadzerButton" Content="Menadzer" HorizontalAlignment="Left" Margin="65,130,0,0" VerticalAlignment="Top" Width="150"/>
+        </Grid>
+        <TextBlock Text="Registracija" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,170,260" FontSize="34" />
     </Grid>
 </Page>

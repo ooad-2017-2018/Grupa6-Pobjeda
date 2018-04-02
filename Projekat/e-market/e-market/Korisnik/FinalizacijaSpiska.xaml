@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,100" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" Click="Button_Click" FontSize="36" FontWeight="Normal" Width="300" Height="86"/>
-        <ListView HorizontalAlignment="Right" Margin="0,60,100,60" VerticalAlignment="Center" Width="900" Height="880" BorderThickness="1" BorderBrush="Black"/>
+        <ListView x:Name="listaArtikala" HorizontalAlignment="Right" Margin="0,60,100,60" VerticalAlignment="Center" Width="900" Height="880" BorderThickness="1" BorderBrush="Black"/>
         <Button x:Name="potvrdiBtn_Copy" Content="Isprintaj spisak" HorizontalAlignment="Left" Margin="100,0,0,286" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" Click="Button_Click" FontSize="36" FontWeight="Normal" Width="300" Height="86"/>
         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,486" IsChecked="False" IsThreeState="False" Content="Uračunaj prijevoz" FontSize="36" Padding="8,-10,0,0"/>
 
