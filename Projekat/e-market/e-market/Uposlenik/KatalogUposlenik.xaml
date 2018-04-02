@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="e_market.KatalogUposlenik"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:e_market"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1500" Height="1000">
+        <Grid BorderBrush="Black" BorderThickness="4" CornerRadius="12" Padding="12" Margin="50,50, 900,50">
+            <ListBox x:Name="listaArtikala" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,10,0" Height="760"/>
+            <TextBox x:Name="searchBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,0,0" FontSize="36" Width="480"/>
+        </Grid>
+        <TextBlock Text="Odaberite artikal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,10,0,0" FontSize="30" Width="270" Height="50"/>
+        <Button x:Name="nazad" Content="Nazad" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,80,50" FontSize="50" Width="270" Height="80"/>
+        <Grid BorderBrush="Black" BorderThickness="4" CornerRadius="12" Padding="12" Margin="700, 50, 50, 170">
+            <Button x:Name="izmijeniNaziv" Content="Izmijeni naziv" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,0,0" FontSize="36" Width="280" Height="60"/>
+            <Button x:Name="izmijeniCijenu" Content="Izmijeni cijenu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,243,0,0" FontSize="36" Width="280" Height="60"/>
+            <Button x:Name="izmijeniKolicinu" Content="Izmijeni kolicinu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,426,0,0" FontSize="36" Width="280" Height="60"/>
+            <Button x:Name="izbrisiArtikal" Content="Izbrisi artikal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,610,0,0" FontSize="36" Width="280" Height="60"/>
+            <TextBox x:Name="noviNaziv" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,60,20,0" Width="340" Height="60" />
+            
+        </Grid>
+    </Grid>
+</Page>
