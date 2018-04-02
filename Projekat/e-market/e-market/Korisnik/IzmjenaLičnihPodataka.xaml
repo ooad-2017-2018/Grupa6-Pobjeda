@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1200" Height="1080" Margin="360,0,360,0">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1200" Height="1000" Margin="150,0,150,0">
         <TextBlock x:Name="lozinkaTxt" HorizontalAlignment="Left" Margin="100,345,0,0" Text="Lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="novaLozinkaTxt" HorizontalAlignment="Left" Margin="100,430,0,0" Text="Nova lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="prezimeTxt" HorizontalAlignment="Left" Margin="100,170,0,0" Text="Prezime:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
@@ -26,7 +26,7 @@
         <ComboBox HorizontalAlignment="Right" Margin="0,500,100,0" VerticalAlignment="Top" Width="580" Height="60" FontSize="36"/>
         <ComboBox HorizontalAlignment="Right" Margin="0,585,100,0" VerticalAlignment="Top" Width="580" Height="60" FontSize="36"/>
         <ComboBox HorizontalAlignment="Right" Margin="0,670,100,0" VerticalAlignment="Top" Width="580" Height="60" FontSize="36"/>
-        <CheckBox Content="Deaktiviraj nalog" HorizontalAlignment="Center" Margin="0,834,0,0" VerticalAlignment="Top" FontSize="36" Padding="8,-10,0,0"/>
+        <CheckBox Content="Deaktiviraj nalog" HorizontalAlignment="Center" Margin="0,800,0,0" VerticalAlignment="Top" FontSize="36" Padding="8,-10,0,0"/>
 
     </Grid>
 </Page>

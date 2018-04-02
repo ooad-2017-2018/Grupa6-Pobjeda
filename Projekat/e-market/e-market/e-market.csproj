@@ -92,8 +92,8 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Admin\AzuriranjePodatakaAdministrator.xaml.cs">
-      <DependentUpon>AzuriranjePodatakaAdministrator.xaml</DependentUpon>
+    <Compile Include="Admin\AžuriranjePodatakaAdministrator.xaml.cs">
+      <DependentUpon>AžuriranjePodatakaAdministrator.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -110,14 +110,14 @@
     <Compile Include="Korisnik\IzmjenaLičnihPodataka.xaml.cs">
       <DependentUpon>IzmjenaLičnihPodataka.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\PretragaArtikla.xaml.cs">
-      <DependentUpon>PretragaArtikla.xaml</DependentUpon>
+    <Compile Include="Korisnik\FinalizacijaSpiska.xaml.cs">
+      <DependentUpon>FinalizacijaSpiska.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\FinalizacijaSpiska.xaml.cs">
-      <DependentUpon>FinalizacijaSpiska.xaml</DependentUpon>
+    <Compile Include="Korisnik\Katalog.xaml.cs">
+      <DependentUpon>Katalog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Uposlenik\DodajArtikalUposlenik.xaml.cs">
       <DependentUpon>DodajArtikalUposlenik.xaml</DependentUpon>
@@ -145,7 +145,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Admin\AzuriranjePodatakaAdministrator.xaml">
+    <Page Include="Admin\AžuriranjePodatakaAdministrator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -197,7 +197,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Korisnik\PretragaArtikla.xaml">
+    <Page Include="Korisnik\FinalizacijaSpiska.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -205,7 +205,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Korisnik\FinalizacijaSpiska.xaml">
+    <Page Include="Korisnik\Katalog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
