@@ -92,23 +92,23 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Admin\AžuriranjePodatakaAdministrator.xaml.cs">
-      <DependentUpon>AžuriranjePodatakaAdministrator.xaml</DependentUpon>
+    <Compile Include="Admin\AzuriranjePodatakaAdministrator.xaml.cs">
+      <DependentUpon>AzuriranjePodatakaAdministrator.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Admin\IzmjenaLičnihPodataka.xaml.cs">
-      <DependentUpon>IzmjenaLičnihPodataka.xaml</DependentUpon>
+    <Compile Include="Admin\IzmjenaLicnihPodatakaAdministrator.xaml.cs">
+      <DependentUpon>IzmjenaLicnihPodatakaAdministrator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menadžer\AzuriranjePodatakaMenadžer.xaml.cs">
-      <DependentUpon>AzuriranjePodatakaMenadžer.xaml</DependentUpon>
+    <Compile Include="Menadžer\AzuriranjePodatakaMenadzer.xaml.cs">
+      <DependentUpon>AzuriranjePodatakaMenadzer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Menadžer\DodajSupermarket.xaml.cs">
       <DependentUpon>DodajSupermarket.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\IzmjenaLičnihPodataka.xaml.cs">
-      <DependentUpon>IzmjenaLičnihPodataka.xaml</DependentUpon>
+    <Compile Include="Korisnik\IzmjenaLicnihPodataka.xaml.cs">
+      <DependentUpon>IzmjenaLicnihPodataka.xaml</DependentUpon>
     </Compile>
     <Compile Include="Korisnik\FinalizacijaSpiska.xaml.cs">
       <DependentUpon>FinalizacijaSpiska.xaml</DependentUpon>
@@ -145,11 +145,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Admin\AžuriranjePodatakaAdministrator.xaml">
+    <Page Include="Admin\AzuriranjePodatakaAdministrator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Admin\IzmjenaLičnihPodataka.xaml">
+    <Page Include="Admin\IzmjenaLicnihPodatakaAdministrator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -185,7 +185,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menadžer\AzuriranjePodatakaMenadžer.xaml">
+    <Page Include="Menadžer\AzuriranjePodatakaMenadzer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -193,7 +193,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Korisnik\IzmjenaLičnihPodataka.xaml">
+    <Page Include="Korisnik\IzmjenaLicnihPodataka.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -250,6 +250,11 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.Midi.GmDls, Version=10.0.16299.0">
+      <Name>Microsoft General MIDI DLS for Universal Windows Apps</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
