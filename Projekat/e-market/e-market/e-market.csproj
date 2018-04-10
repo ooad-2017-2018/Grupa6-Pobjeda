@@ -101,6 +101,23 @@
     <Compile Include="Admin\IzmjenaLicnihPodatakaAdministrator.xaml.cs">
       <DependentUpon>IzmjenaLicnihPodatakaAdministrator.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klase\Administrator.cs" />
+    <Compile Include="Klase\Aplikacija.cs" />
+    <Compile Include="Klase\Artikal.cs" />
+    <Compile Include="Klase\Grad.cs" />
+    <Compile Include="Klase\Klijent.cs" />
+    <Compile Include="Klase\Korisnik.cs" />
+    <Compile Include="Klase\Lanac.cs" />
+    <Compile Include="Klase\Menadzer.cs" />
+    <Compile Include="Klase\Naselje.cs" />
+    <Compile Include="Klase\Opcina.cs" />
+    <Compile Include="Klase\Proizvod.cs" />
+    <Compile Include="Klase\Supermarket.cs" />
+    <Compile Include="Klase\Uposlenik.cs" />
+    <Compile Include="Klase\UposlenikSupermarketa.cs" />
+    <Compile Include="Klase\ZahjtevZaRegistraciju.cs" />
+    <Compile Include="Klase\Zahtjev.cs" />
+    <Compile Include="Klase\ZahtjevZaDodavanjeArtikla.cs" />
     <Compile Include="Menadžer\AzuriranjePodatakaMenadzer.xaml.cs">
       <DependentUpon>AzuriranjePodatakaMenadzer.xaml</DependentUpon>
     </Compile>
