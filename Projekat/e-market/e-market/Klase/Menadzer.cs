@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace e_market.Klase
 {
-    public class Menadzer : Korisnik
+    public class Menadzer : Uposlenik
     {
         private List<Supermarket> supermarketi;
 
