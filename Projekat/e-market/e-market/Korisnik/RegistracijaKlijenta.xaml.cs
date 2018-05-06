@@ -17,14 +17,22 @@ using Windows.UI.Xaml.Navigation;
 
 namespace e_market.Korisnik
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    
     public sealed partial class RegistracijaKlijenta : Page
     {
         public RegistracijaKlijenta()
         {
             this.InitializeComponent();
+        }
+
+        private void PotvrdiButtonClick(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void NazadButtonClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
