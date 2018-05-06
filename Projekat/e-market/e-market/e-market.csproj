@@ -95,6 +95,12 @@
     <Compile Include="Admin\AzuriranjePodatakaAdministrator.xaml.cs">
       <DependentUpon>AzuriranjePodatakaAdministrator.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Admin\PocetniMeniAdministrator.xaml.cs">
+      <DependentUpon>PocetniMeniAdministrator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SpisakArtikalaAdministrator.xaml.cs">
+      <DependentUpon>SpisakArtikalaAdministrator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -118,6 +124,12 @@
     <Compile Include="Klase\ZahjtevZaRegistraciju.cs" />
     <Compile Include="Klase\Zahtjev.cs" />
     <Compile Include="Klase\ZahtjevZaDodavanjeArtikla.cs" />
+    <Compile Include="Korisnik\Prijava.xaml.cs">
+      <DependentUpon>Prijava.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik\RegistracijaKlijenta.xaml.cs">
+      <DependentUpon>RegistracijaKlijenta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Menadžer\AzuriranjePodatakaMenadzer.xaml.cs">
       <DependentUpon>AzuriranjePodatakaMenadzer.xaml</DependentUpon>
     </Compile>
@@ -136,10 +148,16 @@
     <Compile Include="Korisnik\Katalog.xaml.cs">
       <DependentUpon>Katalog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Menadžer\RegistracijaMenadzera.xaml.cs">
+      <DependentUpon>RegistracijaMenadzera.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Uposlenik\DodajArtikalUposlenik.xaml.cs">
       <DependentUpon>DodajArtikalUposlenik.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uposlenik\RegistracijaUposlenikaSupermarketa.xaml.cs">
+      <DependentUpon>RegistracijaUposlenikaSupermarketa.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -175,8 +193,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Admin\SpisakArtikalaAdministrator.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Korisnik\KreiranjeSpiska.xaml">
       <SubType>Designer</SubType>
@@ -195,12 +213,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Korisnik\Prijava.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Korisnik\RegistracijaKlijenta.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Menadžer\AzuriranjePodatakaMenadzer.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -234,9 +252,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Menadžer\RegistracijaMenadzeraSupermarketa.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Menadžer\RegistracijaMenadzera.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Menadžer\Zahtjevi.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -255,8 +273,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Uposlenik\RegistracijaUposlenikaSupermarketa.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Uposlenik\ZahtjeviUposlenik.xaml">
       <Generator>MSBuild:Compile</Generator>
