@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="e_market.View.FinalizacijaSpiska"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:e_market.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,100" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="36" FontWeight="Normal" Width="300" Height="86"/>
+        <ListView x:Name="listaArtikala" HorizontalAlignment="Right" Margin="0,60,100,60" VerticalAlignment="Center" Width="900" Height="880" BorderThickness="1" BorderBrush="Black"/>
+        <Button x:Name="potvrdiBtn_Copy" Content="Isprintaj spisak" HorizontalAlignment="Left" Margin="100,0,0,286" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="36" FontWeight="Normal" Width="300" Height="86"/>
+        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,486" IsChecked="False" IsThreeState="False" Content="Uračunaj prijevoz" FontSize="36" Padding="8,-10,0,0"/>
+
+    </Grid>
+</Page>

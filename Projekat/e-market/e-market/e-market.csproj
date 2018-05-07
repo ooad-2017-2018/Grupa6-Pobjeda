@@ -92,71 +92,101 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Admin\AzuriranjePodatakaAdministrator.xaml.cs">
+    <Compile Include="View\AzuriranjePodatakaAdministrator.xaml.cs">
       <DependentUpon>AzuriranjePodatakaAdministrator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PocetniMeniAdministrator.xaml.cs">
+    <Compile Include="View\KatalogUposlenik.xaml.cs">
+      <DependentUpon>KatalogUposlenik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\KreiranjeSpiska.xaml.cs">
+      <DependentUpon>KreiranjeSpiska.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PocetniMeniAdministrator.xaml.cs">
       <DependentUpon>PocetniMeniAdministrator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SpisakArtikalaAdministrator.xaml.cs">
+    <Compile Include="View\PocetniMeniKlijent.xaml.cs">
+      <DependentUpon>PocetniMeniKlijent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PocetniMeniMenadzer.xaml.cs">
+      <DependentUpon>PocetniMeniMenadzer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PocetniMeniUposlenik.xaml.cs">
+      <DependentUpon>PocetniMeniUposlenik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PosaljiObavjestenje.xaml.cs">
+      <DependentUpon>PosaljiObavjestenje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PretragaPoArtiklu.xaml.cs">
+      <DependentUpon>PretragaPoArtiklu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PretragaPoSupermarketu.xaml.cs">
+      <DependentUpon>PretragaPoSupermarketu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SpisakArtikalaAdministrator.xaml.cs">
       <DependentUpon>SpisakArtikalaAdministrator.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Admin\IzmjenaLicnihPodatakaAdministrator.xaml.cs">
+    <Compile Include="View\IzmjenaLicnihPodatakaAdministrator.xaml.cs">
       <DependentUpon>IzmjenaLicnihPodatakaAdministrator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klase\Administrator.cs" />
-    <Compile Include="Klase\Aplikacija.cs" />
-    <Compile Include="Klase\Artikal.cs" />
-    <Compile Include="Klase\Grad.cs" />
-    <Compile Include="Klase\Klijent.cs" />
-    <Compile Include="Klase\Korisnik.cs" />
-    <Compile Include="Klase\Lanac.cs" />
-    <Compile Include="Klase\Menadzer.cs" />
-    <Compile Include="Klase\Naselje.cs" />
-    <Compile Include="Klase\Opcina.cs" />
-    <Compile Include="Klase\Proizvod.cs" />
-    <Compile Include="Klase\Supermarket.cs" />
-    <Compile Include="Klase\Uposlenik.cs" />
-    <Compile Include="Klase\UposlenikSupermarketa.cs" />
-    <Compile Include="Klase\ZahjtevZaRegistraciju.cs" />
-    <Compile Include="Klase\Zahtjev.cs" />
-    <Compile Include="Klase\ZahtjevZaDodavanjeArtikla.cs" />
-    <Compile Include="Korisnik\Prijava.xaml.cs">
+    <Compile Include="Model\Administrator.cs" />
+    <Compile Include="Model\Aplikacija.cs" />
+    <Compile Include="Model\Artikal.cs" />
+    <Compile Include="Model\Grad.cs" />
+    <Compile Include="Model\Klijent.cs" />
+    <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\Lanac.cs" />
+    <Compile Include="Model\Menadzer.cs" />
+    <Compile Include="Model\Naselje.cs" />
+    <Compile Include="Model\Opcina.cs" />
+    <Compile Include="Model\Proizvod.cs" />
+    <Compile Include="Model\Supermarket.cs" />
+    <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="Model\UposlenikSupermarketa.cs" />
+    <Compile Include="Model\ZahjtevZaRegistraciju.cs" />
+    <Compile Include="Model\Zahtjev.cs" />
+    <Compile Include="Model\ZahtjevZaDodavanjeArtikla.cs" />
+    <Compile Include="View\Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\RegistracijaKlijenta.xaml.cs">
+    <Compile Include="View\RegistracijaKlijenta.xaml.cs">
       <DependentUpon>RegistracijaKlijenta.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menadžer\AzuriranjePodatakaMenadzer.xaml.cs">
+    <Compile Include="View\AzuriranjePodatakaMenadzer.xaml.cs">
       <DependentUpon>AzuriranjePodatakaMenadzer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menadžer\DodajSupermarket.xaml.cs">
+    <Compile Include="View\DodajSupermarket.xaml.cs">
       <DependentUpon>DodajSupermarket.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\IzmjenaLicnihPodataka.xaml.cs">
+    <Compile Include="View\IzmjenaLicnihPodataka.xaml.cs">
       <DependentUpon>IzmjenaLicnihPodataka.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\FinalizacijaSpiska.xaml.cs">
+    <Compile Include="View\FinalizacijaSpiska.xaml.cs">
       <DependentUpon>FinalizacijaSpiska.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\Katalog.xaml.cs">
+    <Compile Include="View\Katalog.xaml.cs">
       <DependentUpon>Katalog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menadžer\RegistracijaMenadzera.xaml.cs">
+    <Compile Include="View\RegistracijaMenadzera.xaml.cs">
       <DependentUpon>RegistracijaMenadzera.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Uposlenik\DodajArtikalUposlenik.xaml.cs">
+    <Compile Include="View\DodajArtikalUposlenik.xaml.cs">
       <DependentUpon>DodajArtikalUposlenik.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Uposlenik\RegistracijaUposlenikaSupermarketa.xaml.cs">
+    <Compile Include="View\RegistracijaUposlenikaSupermarketa.xaml.cs">
       <DependentUpon>RegistracijaUposlenikaSupermarketa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Zahtjevi.xaml.cs">
+      <DependentUpon>Zahtjevi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZahtjeviUposlenik.xaml.cs">
+      <DependentUpon>ZahtjeviUposlenik.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -180,59 +210,75 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Admin\AzuriranjePodatakaAdministrator.xaml">
+    <Page Include="View\AzuriranjePodatakaAdministrator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Admin\IzmjenaLicnihPodatakaAdministrator.xaml">
+    <Page Include="View\IzmjenaLicnihPodatakaAdministrator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Admin\PocetniMeniAdministrator.xaml">
+    <Page Include="View\KatalogUposlenik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Admin\SpisakArtikalaAdministrator.xaml">
+    <Page Include="View\KreiranjeSpiska.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Korisnik\KreiranjeSpiska.xaml">
+    <Page Include="View\PocetniMeniAdministrator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Korisnik\PocetniMeniKlijent.xaml">
+    <Page Include="View\PocetniMeniKlijent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Korisnik\PretragaPoArtiklu.xaml">
+    <Page Include="View\PocetniMeniMenadzer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Korisnik\PretragaPoSupermarketu.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Korisnik\Prijava.xaml">
+    <Page Include="View\PocetniMeniUposlenik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Korisnik\RegistracijaKlijenta.xaml">
+    <Page Include="View\PosaljiObavjestenje.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Menadžer\AzuriranjePodatakaMenadzer.xaml">
+    <Page Include="View\PretragaPoArtiklu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PretragaPoSupermarketu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SpisakArtikalaAdministrator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Prijava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RegistracijaKlijenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AzuriranjePodatakaMenadzer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menadžer\DodajSupermarket.xaml">
+    <Page Include="View\DodajSupermarket.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Korisnik\IzmjenaLicnihPodataka.xaml">
+    <Page Include="View\IzmjenaLicnihPodataka.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Korisnik\FinalizacijaSpiska.xaml">
+    <Page Include="View\FinalizacijaSpiska.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -240,45 +286,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Korisnik\Katalog.xaml">
+    <Page Include="View\Katalog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menadžer\PocetniMeniMenadzer.xaml">
+    <Page Include="View\RegistracijaMenadzera.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Menadžer\PosaljiObavjestenje.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Menadžer\RegistracijaMenadzera.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Menadžer\Zahtjevi.xaml">
+    <Page Include="View\DodajArtikalUposlenik.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Uposlenik\DodajArtikalUposlenik.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Uposlenik\KatalogUposlenik.xaml">
+    <Page Include="View\RegistracijaUposlenikaSupermarketa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Uposlenik\PocetniMeniUposlenik.xaml">
+    <Page Include="View\Zahtjevi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Uposlenik\RegistracijaUposlenikaSupermarketa.xaml">
+    <Page Include="View\ZahtjeviUposlenik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Uposlenik\ZahtjeviUposlenik.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

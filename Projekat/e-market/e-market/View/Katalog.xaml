@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="e_market.View.Katalog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:e_market.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.015,0.469" FontSize="36" FontWeight="Normal" Width="235" Height="86"/>
+        <TextBlock x:Name="unosArtiklaTxt" HorizontalAlignment="Left" Margin="375,125,0,0" Text="Unesite naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox HorizontalAlignment="Right" Margin="0,125,100,0" Text="" VerticalAlignment="Top" FontSize="36" Width="654"/>
+        <ListView HorizontalAlignment="Center" Margin="90,231,90,50" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" MaxHeight="1080" MinHeight="720" MaxWidth="1720" MinWidth="1320" UseLayoutRounding="True" Width="1300"/>
+
+    </Grid>
+</Page>
