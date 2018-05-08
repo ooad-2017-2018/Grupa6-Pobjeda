@@ -92,6 +92,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ViewModel\ArtikalVM.cs" />
+    <Compile Include="ViewModel\KorisnikVM.cs" />
+    <Compile Include="ViewModel\SupermarketVM.cs" />
     <Compile Include="View\AzuriranjePodatakaAdministrator.xaml.cs">
       <DependentUpon>AzuriranjePodatakaAdministrator.xaml</DependentUpon>
     </Compile>
@@ -145,7 +148,7 @@
     <Compile Include="Model\Supermarket.cs" />
     <Compile Include="Model\Uposlenik.cs" />
     <Compile Include="Model\UposlenikSupermarketa.cs" />
-    <Compile Include="Model\ZahjtevZaRegistraciju.cs" />
+    <Compile Include="Model\ZahtjevZaRegistraciju.cs" />
     <Compile Include="Model\Zahtjev.cs" />
     <Compile Include="Model\ZahtjevZaDodavanjeArtikla.cs" />
     <Compile Include="View\Prijava.xaml.cs">
@@ -324,6 +327,7 @@
       <Name>Microsoft General MIDI DLS for Universal Windows Apps</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace e_market.Klase
+namespace e_market
 {
-    public class ZahjtevZaRegistraciju : Zahtjev
+    public class ZahtjevZaRegistraciju : Zahtjev
     { 
         private String korisnickoIme { get; set; }
 
-        public ZahjtevZaRegistraciju() : base() { }
+        public ZahtjevZaRegistraciju() : base() { }
 
         public String getKorisnickoIme()
         {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace e_market.Klase
+namespace e_market
 {
     public class Supermarket
     {
