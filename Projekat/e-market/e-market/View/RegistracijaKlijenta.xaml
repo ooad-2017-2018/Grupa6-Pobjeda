@@ -7,28 +7,51 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="1000">
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="350,80,0,0" Text="Ime:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="285,140,0,0" Text="Prezime:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="200,200,0,0" Text="E-mail adresa:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="170,260,0,0" Text="Odaberite grad:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="135,320,0,0" Text="Odaberite općinu:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="135,380,0,0" Text="Odaberite naselje:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="125,440,0,0" Text="Adresa stanovanja:" VerticalAlignment="Top" Height="47"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="180,500,0,0" Text="Korisničko ime:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="290,560,0,0" Text="Lozinka:" VerticalAlignment="Top"/>
-        <TextBlock FontSize="35" HorizontalAlignment="Left" Margin="180,620,0,0" Text="Potvrdi lozinku:" VerticalAlignment="Top"/>
-        <Button x:Name="potvrdiButton" Click="PotvrdiButtonClick" FontSize="35" Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,60,70" VerticalAlignment="Bottom" Height="60" Width="250"/>
-        <Button x:Name="nazadButton" FontSize="35" Click="NazadButtonClick" Content="Nazad" HorizontalAlignment="Left" Margin="60,0,0,70" VerticalAlignment="Bottom" Width="250" Height="60"/>
-        <TextBox x:Name="imeTextBox" FontSize="15" HorizontalAlignment="Left" Margin="450,80,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <TextBox x:Name="prezimeTextBox" FontSize="15" HorizontalAlignment="Left" Margin="450,140,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <TextBox x:Name="emailTextBox" FontSize="15" HorizontalAlignment="Left" Margin="450,200,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <TextBox x:Name="adresaStanovanjaTextBox" FontSize="15" HorizontalAlignment="Left" Margin="450,440,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <TextBox x:Name="korisnickoImeTextBox" FontSize="15" HorizontalAlignment="Left" Margin="450,500,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <TextBox x:Name="lozinkaTextBox" FontSize="15" HorizontalAlignment="Left" Margin="450,560,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <TextBox x:Name="potvrdiLozinkuTextBox" FontSize="15" HorizontalAlignment="Left" Margin="450,620,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <ComboBox x:Name="gradComboBox" HorizontalAlignment="Left" Margin="450,260,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <ComboBox x:Name="opcinaComboBox" HorizontalAlignment="Left" Margin="450,320,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
-        <ComboBox x:Name="naseljeComboBox" HorizontalAlignment="Left" Margin="450,380,0,0" VerticalAlignment="Top" Width="300" Height="40"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.35*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Right" FontStretch="Normal" Text="Ime:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="1" />
+        <TextBlock HorizontalAlignment="Right" Text="Prezime:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Right" Text="E-mail adresa:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="3"/>
+        <TextBlock HorizontalAlignment="Right" Text="Odaberite grad:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="4"/>
+        <TextBlock HorizontalAlignment="Right" Text="Odaberite općinu:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="5"/>
+        <TextBlock HorizontalAlignment="Right" Text="Odaberite naselje:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="6"/>
+        <TextBlock HorizontalAlignment="Right" Text="Adresa stanovanja:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="7"/>
+        <TextBlock HorizontalAlignment="Right" Text="Korisničko ime:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="8"/>
+        <TextBlock HorizontalAlignment="Right" Text="Lozinka:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="9"/>
+        <TextBlock HorizontalAlignment="Right" Text="Potvrdi lozinku:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="10"/>
+        <Button x:Name="potvrdiButton" Click="PotvrdiButtonClick" Content="Potvrdi" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.Row="12"/>
+        <Button x:Name="nazadButton" Click="NazadButtonClick" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="12"/>
+        <TextBox x:Name="imeTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="1" Margin="0,5,0,5"/>
+        <TextBox x:Name="prezimeTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="2" Margin="0,5,0,5"/>
+        <TextBox x:Name="emailTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3" Margin="0,5,0,5"/>
+        <TextBox x:Name="adresaStanovanjaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="7" Margin="0,5,0,5"/>
+        <TextBox x:Name="korisnickoImeTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="8" Margin="0,5,0,5"/>
+        <TextBox x:Name="lozinkaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="9" Margin="0,5,0,5"/>
+        <TextBox x:Name="potvrdiLozinkuTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="10" Margin="0,10,0,5"/>
+        <ComboBox x:Name="gradComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="4" Margin="0,5,0,5"/>
+        <ComboBox x:Name="opcinaComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="5" Margin="0,5,0,5"/>
+        <ComboBox x:Name="naseljeComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="6" Margin="0,5,0,5"/>
     </Grid>
 </Page>

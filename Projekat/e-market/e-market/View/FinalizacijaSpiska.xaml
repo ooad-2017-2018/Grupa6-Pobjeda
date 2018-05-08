@@ -8,10 +8,25 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,100" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="36" FontWeight="Normal" Width="300" Height="86"/>
-        <ListView x:Name="listaArtikala" HorizontalAlignment="Right" Margin="0,60,100,60" VerticalAlignment="Center" Width="900" Height="880" BorderThickness="1" BorderBrush="Black"/>
-        <Button x:Name="potvrdiBtn_Copy" Content="Isprintaj spisak" HorizontalAlignment="Left" Margin="100,0,0,286" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="36" FontWeight="Normal" Width="300" Height="86"/>
-        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,486" IsChecked="False" IsThreeState="False" Content="Uračunaj prijevoz" FontSize="36" Padding="8,-10,0,0"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.15*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Row="4" Grid.Column="1" Margin="0,20,0,20" />
+        <ListView x:Name="listaArtikala" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" BorderThickness="0.5" BorderBrush="Black" Grid.Row="1" Grid.RowSpan="4" Grid.Column="3" Grid.ColumnSpan="1"/>
+        <Button x:Name="potvrdiBtn_Copy" Content="Isprintaj spisak" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Grid.Column="1" Margin="0,20,0,20"/>
+        <CheckBox HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="False" IsThreeState="False" Content="Uračunaj prijevoz" Grid.Row="2" Grid.RowSpan="1" Grid.Column="1"/>
 
     </Grid>
 </Page>
