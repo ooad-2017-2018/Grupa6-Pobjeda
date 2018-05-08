@@ -10,5 +10,13 @@ namespace e_market
     {
         public Artikal artikal { get; set; }
 
+        public void dodajArtikal()
+        {
+
+        }
+        public void posaljiZahtjev()
+        {
+
+        }
     }
 }

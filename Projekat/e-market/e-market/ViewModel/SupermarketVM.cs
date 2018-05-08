@@ -10,5 +10,9 @@ namespace e_market.ViewModel
     {
         public Supermarket supermarket { get; set; }
 
+        public void dodajSupermarket()
+        {
+
+        }
     }
 }

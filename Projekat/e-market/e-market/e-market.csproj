@@ -95,6 +95,8 @@
     <Compile Include="ViewModel\ArtikalVM.cs" />
     <Compile Include="ViewModel\KorisnikVM.cs" />
     <Compile Include="ViewModel\SupermarketVM.cs" />
+    <Compile Include="ViewModel\UrediArtikalVM.cs" />
+    <Compile Include="ViewModel\UrediLicnePodatkeVM.cs" />
     <Compile Include="View\AzuriranjePodatakaAdministrator.xaml.cs">
       <DependentUpon>AzuriranjePodatakaAdministrator.xaml</DependentUpon>
     </Compile>

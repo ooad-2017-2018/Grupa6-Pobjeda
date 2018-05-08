@@ -9,5 +9,10 @@ namespace e_market.ViewModel
     public class KorisnikVM
     {
         public Korisnik korisnik { get; set; }
+
+        public void dodajKorisnik()
+        {
+
+        }
     }
 }
