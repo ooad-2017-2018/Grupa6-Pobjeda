@@ -7,19 +7,35 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1400" Height="1000">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
 
-        <TextBlock HorizontalAlignment="Left" Margin="350,250,0,0" Text="Korisničko ime: " Height="60" FontSize="36" VerticalAlignment="Top" Width="250"/>
-        <TextBlock HorizontalAlignment="Left" Margin="460,350,594,0" Text="Lozinka: " Height="60" VerticalAlignment="Top" FontSize="36" Width="140"/>
-        <TextBox HorizontalAlignment="Left" Margin="630,250,0,0" VerticalAlignment="Top" Height="60" Width="400"/>
-        <TextBox HorizontalAlignment="Left" Margin="630,350,0,0" VerticalAlignment="Top" Height="60" Width="400"/>
-        <Button Content="Prijava"  HorizontalAlignment="Left" Margin="350,500,0,0" VerticalAlignment="Top" Width="250" Height="60" FontSize="36"/>
-        <Button Content="Izlaz" HorizontalAlignment="Left" Margin="780,500,0,0" VerticalAlignment="Top" Width="250" Height="60" FontSize="36"/>
-        <Grid BorderBrush="Black" BorderThickness="4" Padding="12" CornerRadius="12" HorizontalAlignment="Left" Height="210" Margin="1050,740,0,0" VerticalAlignment="Top" Width="300">
-            <Button x:Name="klijentButton" Content="Klijent" Click="klijentButtonClick" HorizontalAlignment="Left" Margin="65,30,0,0" VerticalAlignment="Top" Width="150"/>
-            <Button x:Name="spUposlenikButton" Content="SP Uposlenik" Click="spUposlenikButtonClick" HorizontalAlignment="Left" Margin="65,80,0,0" VerticalAlignment="Top" Width="150"/>
-            <Button x:Name="menadzerButton" Content="Menadzer" Click="menadzerButtonClick" HorizontalAlignment="Left" Margin="65,130,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBlock x:Name="textblock1" Text="Korisničko ime: " VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" TextAlignment="Center"/>
+        <TextBlock x:Name="textblock2" Text="Lozinka: " VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" TextAlignment="Center"/>
+        <TextBox x:Name="textbox1" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox x:Name="textbox2" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2"/>
+        <Button x:Name="button1" Content="Prijava" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch"/>
+        <Button x:Name="button2" Content="Izlaz" VerticalAlignment="Center" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Stretch"/>
+        <Grid x:Name="grid1" BorderBrush="Black" BorderThickness="2" CornerRadius="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="1">
+            <Button x:Name="button3" Content="Klijent" Click="klijentButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+            <Button x:Name="button4" Content="SP Uposlenik" Click="spUposlenikButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+            <Button x:Name="button5" Content="Menadzer" Click="menadzerButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
         </Grid>
-        <TextBlock Text="Registracija" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,170,260" FontSize="34" />
+        <TextBlock Text="Registracija" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="4" Grid.Row="3"/>
     </Grid>
 </Page>
