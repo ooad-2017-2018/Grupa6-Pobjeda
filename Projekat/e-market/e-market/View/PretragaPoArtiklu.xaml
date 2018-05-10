@@ -7,17 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1500" Height="1000">
-        <TextBlock x:Name="gradTxt" HorizontalAlignment="Left" Margin="88,49,0,0" Text="Odaberite grad:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="opcinaTxt" HorizontalAlignment="Left" Margin="51,129,0,0" Text="Odaberite opcinu:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="naseljeTxt" HorizontalAlignment="Left" Margin="51,207,0,0" Text="Odaberite naselje:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="nazivArtiklaTxt" HorizontalAlignment="Left" Margin="721,45,0,0" Text="Unesite naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,32,51,0" Text="" VerticalAlignment="Top" FontSize="36" Width="383"/>
-        <Button Content="Nazad" HorizontalAlignment="Left" Margin="1290,0,0,801" VerticalAlignment="Bottom" FontSize="36" Height="76" Width="159"/>
-        <Button Content="Pretraga" HorizontalAlignment="Right" Margin="0,0,270,801" VerticalAlignment="Bottom" FontSize="36" Width="159" Height="76"/>
-        <ComboBox x:Name="odaberiGrad" HorizontalAlignment="Left" Margin="400,50,0,0" VerticalAlignment="Top" Height="50" Width="200"/>
-        <ComboBox x:Name="odaberiOpcinu" HorizontalAlignment="Left" Margin="400,130,0,0" VerticalAlignment="Top" Height="50" Width="200"/>
-        <ComboBox x:Name="odaberiNaselje" HorizontalAlignment="Left" Margin="400,210,0,0" VerticalAlignment="Top" Height="50" Width="200"/>
-        <ListView x:Name="listaArtikala" HorizontalAlignment="Left" Height="700" VerticalAlignment="Bottom" Width="1500" IsSynchronizedWithCurrentItem="False"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="traziTxt" HorizontalAlignment="Right" Text="Unesite naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,15,0" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center" Grid.Column="3" Grid.Row="0" Height="Auto"/>
+
+        <TextBlock x:Name="gradTxt" HorizontalAlignment="Right" Text="Odaberite grad:" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,15,0"/>
+        <TextBlock x:Name="opcinaTxt" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Odaberite opcinu:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBlock x:Name="naseljeTxt" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Odaberite naselje:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="2"/>
+        <Button Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="1" Grid.RowSpan="1" Background="#FFF2F2F2" Margin="25,0,25,10" Grid.ColumnSpan="2"/>
+        <Button Content="Pretraga" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="2" Grid.RowSpan="1" Background="#FFF2F2F2" Margin="25,0,25,10" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="odaberiGrad" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.RowSpan="1" Margin="0,30,0,29"/>
+        <ComboBox x:Name="odaberiOpcinu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Margin="0,30,0,29"/>
+        <ComboBox x:Name="odaberiNaselje" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0,30,0,29"/>
+        <ListView x:Name="listaArtikala" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsSynchronizedWithCurrentItem="False" Grid.Row="3" Grid.ColumnSpan="4" Background="#FFF2F2F2" Margin="25,0,25,25"/>
     </Grid>
 </Page>

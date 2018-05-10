@@ -10,10 +10,13 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -28,12 +31,14 @@
         <TextBlock x:Name="textblock2" Text="Lozinka: " VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" TextAlignment="Left"/>
         <TextBox x:Name="textbox1" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1"/>
         <TextBox x:Name="textbox2" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2"/>
-        <Button x:Name="button1" Content="Prijava" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Stretch"/>
-        <Grid x:Name="grid1" BorderBrush="Gray" BorderThickness="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="1">
-            <Button x:Name="button3" Content="Klijent" Click="klijentButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
-            <Button x:Name="button4" Content="SP Uposlenik" Click="spUposlenikButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
-            <Button x:Name="button5" Content="Menadžer" Click="menadzerButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
-        </Grid>
-        <TextBlock Text="Registracija" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="3"/>
+        <Button x:Name="button1" Content="Prijava" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Stretch" Background="#FFF2F2F2"/>
+
+        <Button x:Name="button3" Content="Klijent" Click="klijentButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="5" Background="#FFF2F2F2"/>
+        <Button x:Name="button4" Content="SM Uposlenik" Click="spUposlenikButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="6" Background="#FFF2F2F2"/>
+        <Button x:Name="button5" Content="Menadžer" Click="menadzerButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="7" Background="#FFF2F2F2"/>
+
+
+        <TextBlock Text="Registracija" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="4"/>
+
     </Grid>
 </Page>

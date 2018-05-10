@@ -7,26 +7,44 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1200" Height="1000" Margin="150,0,150,0">
-        <TextBlock x:Name="lozinkaTxt" HorizontalAlignment="Left" Margin="100,345,0,0" Text="Lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="novaLozinkaTxt" HorizontalAlignment="Left" Margin="100,430,0,0" Text="Nova lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="prezimeTxt" HorizontalAlignment="Left" Margin="100,170,0,0" Text="Prezime:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="korisnickoImeTxt" HorizontalAlignment="Left" Margin="100,255,0,0" Text="Korisničko ime:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="imeTxt" HorizontalAlignment="Left" Margin="100,85,0,0" Text="Ime:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,70,100,0" Text="" VerticalAlignment="Top" FontSize="36" Width="580"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,155,100,0" Text="" VerticalAlignment="Top" FontSize="36" Width="580"/>
-        <PasswordBox HorizontalAlignment="Right" Margin="0,240,100,0" VerticalAlignment="Top" FontSize="36" Width="580"/>
-        <PasswordBox HorizontalAlignment="Right" Margin="0,330,100,0" VerticalAlignment="Top" FontSize="36" Width="580"/>
-        <PasswordBox HorizontalAlignment="Right" Margin="0,415,100,0" VerticalAlignment="Top" FontSize="36" Width="580"/>
-        <Button Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,85" VerticalAlignment="Bottom" FontSize="36" Width="250"/>
-        <Button Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,85" VerticalAlignment="Bottom" FontSize="36" Width="250"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy" HorizontalAlignment="Left" Margin="100,515,0,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy1" HorizontalAlignment="Left" Margin="100,600,0,0" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy2" HorizontalAlignment="Left" Margin="100,685,0,0" Text="Naselje:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Right" Margin="0,500,100,0" VerticalAlignment="Top" Width="580" Height="60" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Right" Margin="0,585,100,0" VerticalAlignment="Top" Width="580" Height="60" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Right" Margin="0,670,100,0" VerticalAlignment="Top" Width="580" Height="60" FontSize="36"/>
-        <CheckBox Content="Deaktiviraj nalog" HorizontalAlignment="Center" Margin="0,800,0,0" VerticalAlignment="Top" FontSize="36" Padding="8,-10,0,0"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="lozinkaTxt" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Lozinka:" TextWrapping="Wrap" VerticalAlignment="Center"  Grid.Row="4"/>
+        <TextBlock x:Name="novaLozinkaTxt" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Nova lozinka:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="5"/>
+        <TextBlock x:Name="prezimeTxt" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Prezime:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="2"/>
+        <TextBlock x:Name="korisnickoImeTxt" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Korisničko ime:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="3"/>
+        <TextBlock x:Name="imeTxt" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Ime:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="0,0,25,0" Text="" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Height="Auto"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="0,0,25,0" Text="" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Height="Auto"/>
+        <PasswordBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="3" Height="Auto"/>
+        <PasswordBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="4" Height="Auto"/>
+        <PasswordBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="5" Height="Auto"/>
+        <Button Content="Nazad" HorizontalAlignment="Stretch" Margin="25,0,0,0" VerticalAlignment="Stretch" Grid.Row="10" Background="#FFF2F2F2"/>
+        <Button Content="Potvrdi" HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="10" Background="#FFF2F2F2"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="6"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy1" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="7"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy2" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Naselje:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="8"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="6"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="7"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="8"/>
+        <CheckBox Content="Deaktiviraj nalog" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="9"/>
 
     </Grid>
 </Page>

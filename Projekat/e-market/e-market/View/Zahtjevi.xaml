@@ -7,10 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="1000">
-        <ListBox x:Name="listaZahtjeva" HorizontalAlignment="Left" Height="720" Margin="50,50,0,0" VerticalAlignment="Top" Width="500"/>
-        <Button FontSize="30" Content="Nazad" HorizontalAlignment="Left" Margin="50,900,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
-        <Button FontSize="30"  Content="Odobri zahtjev" HorizontalAlignment="Left" Margin="314,800,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
-        <Button FontSize="30"  Content="Odbij zahtjev" HorizontalAlignment="Left" Margin="314,900,0,0" VerticalAlignment="Top" Height="60" Width="230"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listaZahtjeva" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2"/>
+        <Button FontSize="30" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2" Background="#FFF2F2F2"/>
+        <Button FontSize="30"  Content="Odobri zahtjev" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" Background="#FFF2F2F2"/>
+        <Button FontSize="30"  Content="Odbij zahtjev" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Background="#FFF2F2F2"/>
     </Grid>
 </Page>

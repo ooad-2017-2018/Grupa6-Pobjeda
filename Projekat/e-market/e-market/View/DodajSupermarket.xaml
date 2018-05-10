@@ -7,19 +7,33 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" Height="780" Margin="360,0,360,0">
-        <Button Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,85" VerticalAlignment="Bottom" FontSize="36" Width="250"/>
-        <Button Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,85" VerticalAlignment="Bottom" FontSize="36" Width="250"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy" HorizontalAlignment="Left" Margin="100,100,0,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy1" HorizontalAlignment="Left" Margin="100,185,0,0" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy2" HorizontalAlignment="Left" Margin="100,270,0,0" Text="Naselje:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Right" Margin="100,100,100,0" VerticalAlignment="Top" Width="400" Height="60" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Right" Margin="100,185,100,0" VerticalAlignment="Top" Width="400" Height="60" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Right" Margin="100,270,100,0" VerticalAlignment="Top" Width="400" Height="60" FontSize="36"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy3" HorizontalAlignment="Left" Margin="100,355,0,0" Text="Adresa:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="novaLozinkaTxt_Copy4" HorizontalAlignment="Left" Margin="100,440,0,0" Text="Lanac:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,355,100,0" Text="" VerticalAlignment="Top" FontSize="36" Width="400"/>
-        <ComboBox HorizontalAlignment="Right" Margin="0,440,100,0" VerticalAlignment="Top" Width="400" Height="60" FontSize="36"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Nazad" HorizontalAlignment="Stretch" Margin="25,0,0,0" VerticalAlignment="Stretch" FontSize="36" Grid.Row="6" Background="#FFF2F2F2"/>
+        <Button Content="Potvrdi" HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Stretch" FontSize="36" Grid.Column="1" Grid.Row="6" Background="#FFF2F2F2"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy" HorizontalAlignment="Right" Margin="0,40.678,10,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="1"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy1" HorizontalAlignment="Right" Margin="0,20,10,0" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="2"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy2" HorizontalAlignment="Right" Margin="0,16,10,0" Text="Naselje:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="3"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,40.678,25,0" VerticalAlignment="Center" FontSize="36" Grid.Column="1" Grid.Row="1"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,20,25,0" VerticalAlignment="Center" FontSize="36" Grid.Column="1" Grid.Row="2"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,16,25,0" VerticalAlignment="Center" FontSize="36" Grid.Column="1" Grid.Row="3"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy3" HorizontalAlignment="Right" Margin="0,16,10,0" Text="Adresa:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="4"/>
+        <TextBlock x:Name="novaLozinkaTxt_Copy4" HorizontalAlignment="Right" Margin="0,12,10,0" Text="Lanac:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="5"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="0,16,25,0" Text="" VerticalAlignment="Center" FontSize="36" Grid.Column="1" Grid.Row="4" Height="Auto"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,12,25,0" VerticalAlignment="Center" FontSize="36" Grid.Column="1" Grid.Row="5"/>
 
     </Grid>
 </Page>
