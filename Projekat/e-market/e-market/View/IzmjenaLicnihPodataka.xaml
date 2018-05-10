@@ -36,8 +36,8 @@
         <PasswordBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="3" Height="Auto"/>
         <PasswordBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="4" Height="Auto"/>
         <PasswordBox HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="5" Height="Auto"/>
-        <Button Content="Nazad" HorizontalAlignment="Stretch" Margin="25,0,0,0" VerticalAlignment="Stretch" Grid.Row="10" Background="#FFF2F2F2"/>
-        <Button Content="Potvrdi" HorizontalAlignment="Stretch" Margin="0,0,25,0" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="10" Background="#FFF2F2F2"/>
+        <Button Content="Nazad" HorizontalAlignment="Stretch" Margin="25,0,10,0" VerticalAlignment="Stretch" Grid.Row="10" Background="#FFF2F2F2"/>
+        <Button Content="Potvrdi" HorizontalAlignment="Stretch" Margin="10,0,25,0" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="10" Background="#FFF2F2F2"/>
         <TextBlock x:Name="novaLozinkaTxt_Copy" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="6"/>
         <TextBlock x:Name="novaLozinkaTxt_Copy1" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="7"/>
         <TextBlock x:Name="novaLozinkaTxt_Copy2" HorizontalAlignment="Right" Margin="0,0,15,0" Text="Naselje:" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="8"/>

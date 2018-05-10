@@ -8,10 +8,24 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.015,0.469" FontSize="36" FontWeight="Normal" Width="235" Height="86"/>
-        <TextBlock x:Name="unosArtiklaTxt" HorizontalAlignment="Left" Margin="375,125,0,0" Text="Unesite naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,125,100,0" Text="" VerticalAlignment="Top" FontSize="36" Width="654"/>
-        <ListView HorizontalAlignment="Center" Margin="90,231,90,50" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" MaxHeight="1080" MinHeight="720" MaxWidth="1720" MinWidth="1320" UseLayoutRounding="True" Width="1300"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1.25*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.25*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.25*"/>
+
+        </Grid.RowDefinitions>
+        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" BorderBrush="#FFF2F2F2" Background="#FFF2F2F2"/>
+        <TextBlock x:Name="unosArtiklaTxt" HorizontalAlignment="Right" Text="Unesite naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Stretch" Text="" VerticalAlignment="Center" FontSize="36" Grid.Row="1" Grid.Column="3" Padding="0,0,0,0" Margin="15,0,0,0"/>
+        <ListView HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="1" UseLayoutRounding="True" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Background="#FFF2F2F2"/>
 
     </Grid>
 </Page>

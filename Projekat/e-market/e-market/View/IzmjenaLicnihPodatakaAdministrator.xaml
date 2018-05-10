@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1200" Height="700">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="lozinkaTxt" HorizontalAlignment="Left" Margin="100,345,0,0" Text="Lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="novaLozinkaTxt" HorizontalAlignment="Left" Margin="100,430,0,0" Text="Nova lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <TextBlock x:Name="prezimeTxt" HorizontalAlignment="Left" Margin="100,170,0,0" Text="Prezime:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
