@@ -13,6 +13,6 @@
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
         <ListBox x:Name="listaZahtjeva" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-        <Button Content="Nazad"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="1" Background="#FFF2F2F2"/>
+        <Button Content="Nazad"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="1" Background="#FFF2F2F2" Margin="0,10,0,10"/>
     </Grid>
 </Page>

@@ -32,7 +32,6 @@
             <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="300" Margin="400,400,0,0"/>
         </RelativePanel>
         <RelativePanel BorderBrush="Gray" BorderThickness="1" Margin="100,100,1000,152"/>
-        <Button x:Name="potvrdiBtn_Copy" Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,618,-873" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="24" FontWeight="Normal" Width="180" Height="49" Grid.RowSpan="3"/>
 
     </Grid>
 </Page>

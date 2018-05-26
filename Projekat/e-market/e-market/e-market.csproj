@@ -93,6 +93,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ViewModel\ArtikalVM.cs" />
+    <Compile Include="ViewModel\Kontejner.cs" />
     <Compile Include="ViewModel\KorisnikVM.cs" />
     <Compile Include="ViewModel\SupermarketVM.cs" />
     <Compile Include="ViewModel\UrediArtikalVM.cs" />

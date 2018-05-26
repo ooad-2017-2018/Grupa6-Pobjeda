@@ -7,18 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1500" Height="1000">
-        <Grid BorderBrush="Black" BorderThickness="4" CornerRadius="12" Padding="12" Margin="50,50, 900,50">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid BorderBrush="Black" BorderThickness="1" Padding="12" Margin="50,50, 1200,50">
             <ListBox x:Name="listaArtikala" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,10,0" Height="760"/>
             <TextBox x:Name="searchBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,0,0" FontSize="36" Width="480"/>
         </Grid>
-        <TextBlock Text="Odaberite artikal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,10,0,0" FontSize="30" Width="270" Height="50"/>
-        <Button x:Name="nazad" Content="Nazad" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,80,50" FontSize="50" Width="270" Height="80"/>
-        <Grid BorderBrush="Black" BorderThickness="4" CornerRadius="12" Padding="12" Margin="700, 50, 50, 170">
-            <Button x:Name="izmijeniNaziv" Content="Izmijeni naziv" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,0,0" FontSize="36" Width="280" Height="60"/>
-            <Button x:Name="izmijeniCijenu" Content="Izmijeni cijenu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,243,0,0" FontSize="36" Width="280" Height="60"/>
-            <Button x:Name="izmijeniKolicinu" Content="Izmijeni kolicinu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,426,0,0" FontSize="36" Width="280" Height="60"/>
-            <Button x:Name="izbrisiArtikal" Content="Izbrisi artikal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,610,0,0" FontSize="36" Width="280" Height="60"/>
+        <TextBlock Text="Odaberite artikal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,10,0,0" Width="270" Height="50"/>
+        <Button x:Name="nazad" Content="Nazad" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,50" Width="270" Height="80" Background="#FFF2F2F2"/>
+        <Grid BorderBrush="Black" BorderThickness="1" Padding="12" Margin="800, 50, 50, 170">
+            <Button x:Name="izmijeniNaziv" Content="Izmijeni naziv" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,0,0"  Width="280" Height="60" Background="#FFF2F2F2"/>
+            <Button x:Name="izmijeniCijenu" Content="Izmijeni cijenu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,243,0,0" Width="280" Height="60" Background="#FFF2F2F2"/>
+            <Button x:Name="izmijeniKolicinu" Content="Izmijeni kolicinu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,426,0,0" Width="280" Height="60" Background="#FFF2F2F2"/>
+            <Button x:Name="izbrisiArtikal" Content="Izbrisi artikal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,610,0,0" Width="280" Height="60" Background="#FFF2F2F2"/>
             <TextBox x:Name="noviNaziv" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,60,20,0" Width="340" Height="60" />
             <TextBox x:Name="cijenaTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,243,20,0" Width="340" Height="60" />
             <TextBox x:Name="kolicinaTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,426,20,0" Width="340" Height="60" />
