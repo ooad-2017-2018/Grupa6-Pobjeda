@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace e_market
 {
-    public abstract class Uposlenik : Korisnik
+    public class Uposlenik : Korisnik
     {
         private int sifraUposlenika { get; set; }
         private Lanac lanac { get; set; }

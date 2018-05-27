@@ -14,8 +14,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using e_market.View;
-using e_market.ViewModel;
 
 namespace e_market
 {

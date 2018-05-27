@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -15,13 +16,20 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace e_market.View
+namespace e_market
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class Prijava : Page
     {
+        private static Kontejner _kontejner = new Kontejner();
+
+        public static Kontejner kontejner { get => _kontejner; set => _kontejner = value; }
+
+        async void messageDialog(String s)
+        {
+            var dialog = new MessageDialog(s);
+            await dialog.ShowAsync();
+        }
+
         public Prijava()
         {
             this.InitializeComponent();
@@ -44,10 +52,12 @@ namespace e_market.View
 
         private void loginButtonClick(object sender, RoutedEventArgs e)
         {
-            int i = 0;
+            String username = usernameTextBox.Text;
+            String lozinka = lozinkaTextBox.Text;
+
+            int i = Prijava.kontejner.dajUsera(username, lozinka);
             if (i == 0) {
                 this.Frame.Navigate(typeof(PocetniMeniKlijent));
-
             }
             else if(i == 1)
             {
@@ -57,9 +67,13 @@ namespace e_market.View
             {
                 this.Frame.Navigate(typeof(PocetniMeniUposlenik));
             }
-            else
+            else if(i == 3)
             {
                 this.Frame.Navigate(typeof(PocetniMeniAdministrator));
+            }
+            else
+            {
+                messageDialog("Ne postoji korisnik sa tim podacima!");
             }
         }
     }

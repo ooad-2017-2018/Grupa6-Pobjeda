@@ -12,8 +12,9 @@ namespace e_market
         private List<Naselje> naselja { get; set; }
 
         public Opcina() { naselja = new List<Naselje>(); }
-        public Opcina(List<Naselje> n)
+        public Opcina(String naziv, List<Naselje> n)
         {
+            this.naziv = naziv;
             naselja = n;
         }
 

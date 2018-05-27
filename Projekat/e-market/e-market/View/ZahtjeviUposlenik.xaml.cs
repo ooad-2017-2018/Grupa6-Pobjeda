@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace e_market.View
+namespace e_market
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -25,6 +25,11 @@ namespace e_market.View
         public ZahtjeviUposlenik()
         {
             this.InitializeComponent();
+        }
+
+        private void nazad_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PocetniMeniUposlenik));
         }
     }
 }

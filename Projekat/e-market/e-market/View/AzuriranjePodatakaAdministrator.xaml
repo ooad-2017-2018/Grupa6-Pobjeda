@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="e_market.View.AzuriranjePodatakaAdministrator"
+    x:Class="e_market.AzuriranjePodatakaAdministrator"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:e_market.View"
+    xmlns:local="using:e_market"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -13,11 +13,11 @@
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Button x:Name="povratakBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,50" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" Width="180" FontSize="24" FontWeight="Normal" Height="50" Click="nazad_Click"/>
-        <Button x:Name="potvrdiBtn" Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,50" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="24" FontWeight="Normal" Width="180" Height="49"/>
-        <TextBlock x:Name="gradTxt" HorizontalAlignment="Right" Margin="0,0,450,260" Grid.RowSpan="3" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="24"/>
-        <TextBlock x:Name="opcinaTxt" HorizontalAlignment="Right" Margin="0,0,450,205" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="24" Grid.RowSpan="3"/>
-        <TextBlock x:Name="naseljeTxt" HorizontalAlignment="Right" Margin="0,0,450,150" Text="Naselje:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="24" Grid.RowSpan="3"/>
+        <Button x:Name="povratakBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,50" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" Width="180"  FontWeight="Normal" Height="50" Click="nazad_Click" Background="#FFF2F2F2"/>
+        <Button x:Name="potvrdiBtn" Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,50" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469"  FontWeight="Normal" Width="180" Height="49" Background="#FFF2F2F2"/>
+        <TextBlock x:Name="gradTxt" HorizontalAlignment="Right" Margin="0,0,450,260" Grid.RowSpan="3" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Bottom" />
+        <TextBlock x:Name="opcinaTxt" HorizontalAlignment="Right" Margin="0,0,450,205" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Bottom"  Grid.RowSpan="3"/>
+        <TextBlock x:Name="naseljeTxt" HorizontalAlignment="Right" Margin="0,0,450,150" Text="Naselje:" TextWrapping="Wrap" VerticalAlignment="Bottom"  Grid.RowSpan="3"/>
         <ComboBox HorizontalAlignment="Right" Margin="0,0,100,260" VerticalAlignment="Bottom" Height="40" Width="180">
             <ListView/>
         </ComboBox>
@@ -26,18 +26,18 @@
         <Viewbox HorizontalAlignment="Left" Height="147" Margin="1167,381,0,0" VerticalAlignment="Top" Width="195"/>
         <CaptureElement HorizontalAlignment="Left" Height="258" Margin="879,222,0,0" VerticalAlignment="Top" Width="504"/>
         <RelativePanel x:Name="podaciIzmijenePanel" BorderBrush="Gray" BorderThickness="1" Height="550" Margin="0,100,100,-698" VerticalAlignment="Top" HorizontalAlignment="Right" Width="800" Grid.RowSpan="3">
-            <TextBlock x:Name="IDSupermarketaTxt" Text="ID Supermarketa:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95" FontSize="24" Margin="100,80,-69,-96"/>
-            <TextBlock x:Name="IDSupermarketaTxt_Copy" Text="Ime i prezime:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95" FontSize="24" Margin="100,160,-68,-160"/>
-            <TextBlock x:Name="IDSupermarketaTxt_Copy1" Text="Lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95" FontSize="24" Margin="100,240,-70,-23" Height="32"/>
-            <TextBlock x:Name="IDSupermarketaTxt_Copy2" Text="Uloga:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95" FontSize="24" Margin="100,320,-68,-290"/>
-            <RadioButton x:Name="radnikBtn" Content="Radnik" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="400,320,-348,-324" HorizontalContentAlignment="Left" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" FontSize="24" Padding="8,0,0,0"/>
+            <TextBlock x:Name="IDSupermarketaTxt" Text="ID Supermarketa:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95"  Margin="100,80,-69,-96"/>
+            <TextBlock x:Name="IDSupermarketaTxt_Copy" Text="Ime i prezime:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95"  Margin="100,160,-68,-160"/>
+            <TextBlock x:Name="IDSupermarketaTxt_Copy1" Text="Lozinka:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95"  Margin="100,240,-70,-23" Height="32"/>
+            <TextBlock x:Name="IDSupermarketaTxt_Copy2" Text="Uloga:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="2.565,3.95"  Margin="100,320,-68,-290"/>
+            <RadioButton x:Name="radnikBtn" Content="Radnik" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="400,320,-348,-324" HorizontalContentAlignment="Left" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight"  Padding="8,0,0,0"/>
             <PasswordBox Margin="400,240,-672,-257" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.479" Width="300" Height="40"/>
-            <TextBox HorizontalAlignment="Left" Height="40" Text="" VerticalAlignment="Top" Width="300" RenderTransformOrigin="3.16,3.302" Margin="400,160,-420,-168" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Text="" VerticalAlignment="Top" Width="300" RenderTransformOrigin="3.16,3.302" Margin="400,160,-420,-168" />
             <ComboBox HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="300" Margin="400,76,0,-76" Height="40">
                 <CheckBox/>
             </ComboBox>
-            <RadioButton x:Name="radnikBtn_Copy" Content="Menadžer" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="140" Margin="560,320,-528,-326" HorizontalContentAlignment="Left" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" FontSize="24" Padding="8,0,0,0"/>
-            <Button x:Name="izmijeniPodatkeBtn" Content="Izmijeni podatke" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="24" FontWeight="Normal" Width="300" Height="49" Margin="0,0,-550,-500"/>
+            <RadioButton x:Name="radnikBtn_Copy" Content="Menadžer" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="140" Margin="560,320,-528,-326" HorizontalContentAlignment="Left" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight"  Padding="8,0,0,0"/>
+            <Button x:Name="izmijeniPodatkeBtn" Content="Izmijeni podatke" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469"  FontWeight="Normal" Width="300" Height="49" Margin="0,0,-550,-500" Background="#FFF2F2F2"/>
         </RelativePanel>
         <RelativePanel BorderBrush="Gray" BorderThickness="1" Margin="100,100,1000,152"/>
 
