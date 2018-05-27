@@ -26,5 +26,30 @@ namespace e_market.View
         {
             this.InitializeComponent();
         }
+
+        private void PretragaPoArtikluButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PretragaPoArtiklu));
+        }
+
+        private void PretragaPoSupermarketuButtonclick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PretragaPoSupermarketu));
+        }
+
+        private void KreirajSpisakKupovineButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(KreiranjeSpiska));
+        }
+
+        private void NalogButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(IzmjenaLicnihPodataka));
+        }
+
+        private void OdjavaButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Prijava));
+        }
     }
 }

@@ -18,7 +18,7 @@
         <PasswordBox HorizontalAlignment="Right" Margin="0,240,100,0" VerticalAlignment="Top" FontSize="36" Width="580"/>
         <PasswordBox HorizontalAlignment="Right" Margin="0,330,100,0" VerticalAlignment="Top" FontSize="36" Width="580"/>
         <PasswordBox HorizontalAlignment="Right" Margin="0,415,100,0" VerticalAlignment="Top" FontSize="36" Width="580"/>
-        <Button Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,85" VerticalAlignment="Bottom" FontSize="36" Width="250"/>
+        <Button Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,85" VerticalAlignment="Bottom" FontSize="36" Width="250" Click="nazad_Click"/>
         <Button Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,85" VerticalAlignment="Bottom" FontSize="36" Width="250"/>
 
     </Grid>

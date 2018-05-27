@@ -17,9 +17,9 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="listaZahtjeva" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2"/>
-        <Button FontSize="30" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2" Background="#FFF2F2F2"/>
-        <Button FontSize="30"  Content="Odobri zahtjev" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" Background="#FFF2F2F2"/>
-        <Button FontSize="30"  Content="Odbij zahtjev" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Background="#FFF2F2F2"/>
+        <ListBox x:Name="listaZahtjeva" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Margin="10,10,10,10"/>
+        <Button FontSize="30" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2" Background="#FFF2F2F2" Margin="10,10,10,10" Click="nazad_Click"/>
+        <Button FontSize="30"  Content="Odobri zahtjev" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" Background="#FFF2F2F2" Margin="10,0,10,0"/>
+        <Button FontSize="30"  Content="Odbij zahtjev" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Background="#FFF2F2F2" Margin="10,0,10,0"/>
     </Grid>
 </Page>

@@ -22,7 +22,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Nazad" HorizontalAlignment="Stretch" Margin="25,0,12.5,0" VerticalAlignment="Stretch" FontSize="36" Grid.Row="6" Background="#FFF2F2F2"/>
+        <Button Content="Nazad" HorizontalAlignment="Stretch" Margin="25,0,12.5,0" VerticalAlignment="Stretch" FontSize="36" Grid.Row="6" Background="#FFF2F2F2" Click="nazad_Click"/>
         <Button Content="Potvrdi" HorizontalAlignment="Stretch" Margin="12.5,0,25,0" VerticalAlignment="Stretch" FontSize="36" Grid.Column="1" Grid.Row="6" Background="#FFF2F2F2"/>
         <TextBlock x:Name="novaLozinkaTxt_Copy" HorizontalAlignment="Right" Margin="0,40.678,10,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="1"/>
         <TextBlock x:Name="novaLozinkaTxt_Copy1" HorizontalAlignment="Right" Margin="0,20,10,0" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="2"/>

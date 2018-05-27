@@ -13,7 +13,7 @@
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Button x:Name="povratakBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,50" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" Width="180" FontSize="24" FontWeight="Normal" Height="50"/>
+        <Button x:Name="povratakBtn" Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,50" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" Width="180" FontSize="24" FontWeight="Normal" Height="50" Click="nazad_Click"/>
         <Button x:Name="potvrdiBtn" Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,50" VerticalAlignment="Bottom" RenderTransformOrigin="1.015,0.469" FontSize="24" FontWeight="Normal" Width="180" Height="49"/>
         <TextBlock x:Name="gradTxt" HorizontalAlignment="Right" Margin="0,0,450,260" Grid.RowSpan="3" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="24"/>
         <TextBlock x:Name="opcinaTxt" HorizontalAlignment="Right" Margin="0,0,450,205" Text="Općina:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="24" Grid.RowSpan="3"/>

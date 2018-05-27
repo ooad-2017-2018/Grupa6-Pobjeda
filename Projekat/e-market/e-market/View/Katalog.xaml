@@ -22,7 +22,7 @@
             <RowDefinition Height="0.25*"/>
 
         </Grid.RowDefinitions>
-        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" BorderBrush="#FFF2F2F2" Background="#FFF2F2F2"/>
+        <Button x:Name="potvrdiBtn" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" BorderBrush="#FFF2F2F2" Background="#FFF2F2F2" Click="nazad_Click" Margin="0,0,0,10"/>
         <TextBlock x:Name="unosArtiklaTxt" HorizontalAlignment="Right" Text="Unesite naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Stretch" Text="" VerticalAlignment="Center" FontSize="36" Grid.Row="1" Grid.Column="3" Padding="0,0,0,0" Margin="15,0,0,0"/>
         <ListView HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="1" UseLayoutRounding="True" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Background="#FFF2F2F2"/>

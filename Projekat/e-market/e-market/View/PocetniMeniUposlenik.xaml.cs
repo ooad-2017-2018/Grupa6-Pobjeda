@@ -26,5 +26,30 @@ namespace e_market.View
         {
             this.InitializeComponent();
         }
+
+        private void Dodaj_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodajArtikalUposlenik));
+        }
+
+        private void Katalog_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(KatalogUposlenik));
+        }
+
+        private void Zahtjevi_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ZahtjeviUposlenik));
+        }
+
+        private void NalogButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(IzmjenaLicnihPodataka));
+        }
+
+        private void odjavaButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Prijava));
+        }
     }
 }

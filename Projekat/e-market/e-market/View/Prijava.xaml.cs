@@ -41,5 +41,26 @@ namespace e_market.View
         {
             this.Frame.Navigate(typeof(RegistracijaUposlenikaSupermarketa));
         }
+
+        private void loginButtonClick(object sender, RoutedEventArgs e)
+        {
+            int i = 0;
+            if (i == 0) {
+                this.Frame.Navigate(typeof(PocetniMeniKlijent));
+
+            }
+            else if(i == 1)
+            {
+                this.Frame.Navigate(typeof(PocetniMeniMenadzer));
+            }
+            else if(i == 2)
+            {
+                this.Frame.Navigate(typeof(PocetniMeniUposlenik));
+            }
+            else
+            {
+                this.Frame.Navigate(typeof(PocetniMeniAdministrator));
+            }
+        }
     }
 }

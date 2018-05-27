@@ -26,5 +26,20 @@ namespace e_market.View
         {
             this.InitializeComponent();
         }
+
+        private void nazad_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PocetniMeniKlijent));
+        }
+
+        private void dodajArtikal_Click(object sender, RoutedEventArgs e)
+        {
+            //Dodaj Artikal
+        }
+
+        private void finalizujSpisak_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(FinalizacijaSpiska));
+        }
     }
 }

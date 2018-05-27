@@ -31,7 +31,7 @@
         <TextBlock x:Name="textblock2" Text="Lozinka: " VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" TextAlignment="Left"/>
         <TextBox x:Name="textbox1" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1"/>
         <TextBox x:Name="textbox2" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2"/>
-        <Button x:Name="button1" Content="Prijava" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Stretch" Background="#FFF2F2F2"/>
+        <Button x:Name="button1" Content="Prijava" VerticalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Stretch" Background="#FFF2F2F2" Margin="0,0,0,82" Click="loginButtonClick"/>
 
         <Button x:Name="button3" Content="Klijent" Click="klijentButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="5" Background="#FFF2F2F2"/>
         <Button x:Name="button4" Content="SM Uposlenik" Click="spUposlenikButtonClick" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="6" Background="#FFF2F2F2"/>

@@ -26,5 +26,16 @@ namespace e_market.View
         {
             this.InitializeComponent();
         }
+
+        private void nazad_Click(object sender, RoutedEventArgs e)
+        {
+            int i = 0;
+            if (i == 0)
+                this.Frame.Navigate(typeof(PocetniMeniKlijent));
+            else if (i == 1)
+                this.Frame.Navigate(typeof(PocetniMeniUposlenik));
+            else
+                this.Frame.Navigate(typeof(PocetniMeniMenadzer));
+        }
     }
 }
