@@ -53,7 +53,7 @@ namespace e_market
         private void loginButtonClick(object sender, RoutedEventArgs e)
         {
             String username = usernameTextBox.Text;
-            String lozinka = lozinkaTextBox.Text;
+            String lozinka = lozinkaTextBox.Password;
 
             int i = Prijava.kontejner.dajUsera(username, lozinka);
             if (i == 0) {
@@ -69,7 +69,12 @@ namespace e_market
             }
             else if(i == 3)
             {
-                this.Frame.Navigate(typeof(PocetniMeniAdministrator));
+                if(kontejner.Administratori[0].Deaktiviran == true)
+                {
+                    messageDialog("Ovaj akaunt je deaktiviran, obratite se glavnom administratoru!");
+                }
+                else
+                    this.Frame.Navigate(typeof(PocetniMeniAdministrator));
             }
             else
             {

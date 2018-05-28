@@ -46,17 +46,17 @@
         <TextBlock HorizontalAlignment="Right" Text="Potvrdi lozinku:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="10"/>
         <TextBlock HorizontalAlignment="Right" FontStretch="Normal" Text="Odaberite lanac supermarketa:" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="11" />
 
-        <Button x:Name="potvrdiButton" Content="Potvrdi registraciju" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="13" Background="#FFF2F2F2"/>
+        <Button x:Name="potvrdiButton" Content="Potvrdi registraciju" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="13" Background="#FFF2F2F2" Click="PotvrdiButtonClick"/>
         <Button x:Name="nazadButton" Click="nazadButton_Click" Content="Nazad" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="14" Background="#FFF2F2F2"/>
         <TextBox x:Name="imeTextBox" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1"/>
         <TextBox x:Name="prezimeTextBox" VerticalAlignment="Center" Grid.Column="3" Grid.Row="2" />
         <TextBox x:Name="emailTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3" />
         <TextBox x:Name="adresaStanovanjaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="7" />
         <TextBox x:Name="korisnickoImeTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="8" />
-        <TextBox x:Name="lozinkaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="9" />
-        <TextBox x:Name="potvrdiLozinkuTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="10"/>
-        <ComboBox x:Name="gradComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="4"/>
-        <ComboBox x:Name="opcinaComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="5" />
+        <PasswordBox x:Name="lozinkaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="9" />
+        <PasswordBox x:Name="potvrdiLozinkuTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="10"/>
+        <ComboBox x:Name="gradComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="4" SelectionChanged="gradComboBox_SelectionChanged"/>
+        <ComboBox x:Name="opcinaComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="5" SelectionChanged="opcinaComboBox_SelectionChanged" />
         <ComboBox x:Name="naseljeComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center"  Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="6" />
         <ComboBox x:Name="superMarketBox" HorizontalAlignment="Stretch" VerticalAlignment="Center"  Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="11" />
     </Grid>

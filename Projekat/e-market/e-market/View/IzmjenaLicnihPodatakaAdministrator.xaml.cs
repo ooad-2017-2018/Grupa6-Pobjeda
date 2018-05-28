@@ -25,12 +25,23 @@ namespace e_market
         public IzmjenaLicnihPodatakaAdministrator()
         {
             this.InitializeComponent();
-            
+            imeBox.Text = Prijava.kontejner.Administratori[0].getIme();
+            prezimeBox.Text = Prijava.kontejner.Administratori[0].getPrezime();
+            korisnickoImeBox.Text = Prijava.kontejner.Administratori[0].getKorisnickoIme();
+
         }
 
         private void nazad_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PocetniMeniAdministrator));
+        }
+
+        private void potvrdi_Click(object sender, RoutedEventArgs e)
+        {
+            Prijava.kontejner.Administratori[0].setIme(imeBox.Text);
+            Prijava.kontejner.Administratori[0].setPrezime(prezimeBox.Text);
+            Prijava.kontejner.Administratori[0].setKorisnickoIme(korisnickoImeBox.Text);
+            Prijava.kontejner.Administratori[0].setLozinka(lozinkaBox.Password);
         }
     }
 }

@@ -40,6 +40,7 @@ namespace e_market
         private void DeaktivirajNalogButtonClick(object sender, RoutedEventArgs e)
         {
             //Deaktiviraj Nalog
+            Prijava.kontejner.Administratori[0].deaktiviraj();
             this.Frame.Navigate(typeof(Prijava));
         }
 

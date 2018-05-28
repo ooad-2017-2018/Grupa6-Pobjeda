@@ -13,13 +13,13 @@
         <TextBlock x:Name="prezimeTxt" HorizontalAlignment="Left" Margin="100,170,0,0" Text="Prezime:" TextWrapping="Wrap" VerticalAlignment="Top" />
         <TextBlock x:Name="korisnickoImeTxt" HorizontalAlignment="Left" Margin="100,255,0,0" Text="Korisničko ime:" TextWrapping="Wrap" VerticalAlignment="Top" />
         <TextBlock x:Name="imeTxt" HorizontalAlignment="Left" Margin="100,85,0,0" Text="Ime:" TextWrapping="Wrap" VerticalAlignment="Top" />
-        <TextBox HorizontalAlignment="Right" Margin="0,70,100,0" Text="" VerticalAlignment="Top"  Width="700"/>
-        <TextBox HorizontalAlignment="Right" Margin="0,155,100,0" Text="" VerticalAlignment="Top"  Width="700"/>
-        <PasswordBox HorizontalAlignment="Right" Margin="0,240,100,0" VerticalAlignment="Top"  Width="700"/>
-        <PasswordBox HorizontalAlignment="Right" Margin="0,330,100,0" VerticalAlignment="Top"  Width="700"/>
-        <PasswordBox HorizontalAlignment="Right" Margin="0,415,100,0" VerticalAlignment="Top"  Width="700"/>
+        <TextBox x:Name="imeBox" HorizontalAlignment="Right" Margin="0,70,100,0" Text="" VerticalAlignment="Top"  Width="700"/>
+        <TextBox x:Name="prezimeBox" HorizontalAlignment="Right" Margin="0,155,100,0" Text="" VerticalAlignment="Top"  Width="700"/>
+        <TextBox x:Name="korisnickoImeBox" HorizontalAlignment="Right" Margin="0,240,100,0" VerticalAlignment="Top"  Width="700"/>
+        <PasswordBox x:Name="lozinkaBox" HorizontalAlignment="Right" Margin="0,330,100,0" VerticalAlignment="Top"  Width="700"/>
+        <PasswordBox x:Name="novaLozinkaBox" HorizontalAlignment="Right" Margin="0,415,100,0" VerticalAlignment="Top"  Width="700"/>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="100,0,0,85" VerticalAlignment="Bottom"  Width="370" Click="nazad_Click" Background="#FFF2F2F2" Height="106"/>
-        <Button Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,85" VerticalAlignment="Bottom"  Width="370" Background="#FFF2F2F2" Height="106"/>
+        <Button Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,100,85" VerticalAlignment="Bottom"  Width="370" Background="#FFF2F2F2" Height="106" Click="potvrdi_Click"/>
 
     </Grid>
 </Page>

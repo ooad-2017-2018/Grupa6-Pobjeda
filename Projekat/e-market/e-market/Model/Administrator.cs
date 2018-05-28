@@ -10,6 +10,9 @@ namespace e_market
     {
         private int sifraAdministratora { get; set; }
         private List<Zahtjev> zahtjevi { get; set; }
+        public bool Deaktiviran { get => deaktiviran; set => deaktiviran = value; }
+    
+        private bool deaktiviran;
 
         public Administrator() : base()
         {
@@ -32,6 +35,10 @@ namespace e_market
         public void setZahtjevi(List<Zahtjev> z)
         {
             zahtjevi = z;
+        }
+        public void deaktiviraj()
+        {
+            deaktiviran = true;
         }
     }
 }

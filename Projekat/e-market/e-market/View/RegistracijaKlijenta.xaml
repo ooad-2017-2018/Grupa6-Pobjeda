@@ -50,10 +50,10 @@
         <TextBox x:Name="emailTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3"/>
         <TextBox x:Name="adresaStanovanjaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="7"/>
         <TextBox x:Name="korisnickoImeTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="8"/>
-        <TextBox x:Name="lozinkaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="9"/>
-        <TextBox x:Name="potvrdiLozinkuTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="10" />
+        <PasswordBox x:Name="lozinkaTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="9"/>
+        <PasswordBox x:Name="potvrdiLozinkuTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="10"/>
         <ComboBox x:Name="gradComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="4" SelectionChanged="gradComboBox_SelectionChanged" />
-        <ComboBox x:Name="opcinaComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="5"/>
+        <ComboBox x:Name="opcinaComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="5" SelectionChanged="opcinaComboBox_SelectionChanged"/>
         <ComboBox x:Name="naseljeComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Center"  Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="6"/>
     </Grid>
 </Page>

@@ -11,7 +11,10 @@ namespace e_market
         private String naziv { get; set; }
         private List<Supermarket> supermarketi { get; set; }
 
-        public Lanac() { supermarketi = new List<Supermarket>(); }
+        public Lanac(String naziv) {
+            this.naziv = naziv;
+            supermarketi = new List<Supermarket>();
+        }
 
         public String getNaziv()
         {

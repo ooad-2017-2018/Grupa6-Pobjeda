@@ -42,18 +42,22 @@ namespace e_market
             String ime = imeTextBox.Text;
             String prezime = prezimeTextBox.Text;
             String korisnickoIme = korisnickoImeTextBox.Text;
-            String lozinka = lozinkaTextBox.Text;
+            String lozinka = lozinkaTextBox.Password;
             String email = emailTextBox.Text;
             String adresa = adresaStanovanjaTextBox.Text;
 
-            if (imeTextBox.Text == string.Empty || prezimeTextBox.Text == string.Empty || korisnickoImeTextBox.Text == string.Empty || lozinkaTextBox.Text == string.Empty || emailTextBox.Text == string.Empty || adresaStanovanjaTextBox.Text == string.Empty ||
-                potvrdiLozinkuTextBox.Text == string.Empty || potvrdiLozinkuTextBox.Text != lozinkaTextBox.Text || !emailTextBox.Text.Contains("@") )
+            if (imeTextBox.Text == string.Empty || prezimeTextBox.Text == string.Empty || korisnickoImeTextBox.Text == string.Empty || lozinkaTextBox.Password == string.Empty || emailTextBox.Text == string.Empty || adresaStanovanjaTextBox.Text == string.Empty ||
+                potvrdiLozinkuTextBox.Password == string.Empty || potvrdiLozinkuTextBox.Password != lozinkaTextBox.Password || !emailTextBox.Text.Contains("@") || !(gradComboBox.SelectedIndex >= 0) ||
+                !(opcinaComboBox.SelectedIndex >= 0) || !(naseljeComboBox.SelectedIndex >= 0))
             {
                 messageDialog("Greška u unosu podataka!");
             }
             else
             {
-                Prijava.kontejner.dodajKorisnika(new Klijent(ime, prezime, email, adresa, new Grad(), new Opcina(), new Naselje(), korisnickoIme, lozinka));
+                Prijava.kontejner.dodajKorisnika(new Klijent(ime, prezime, email, adresa, Prijava.kontejner.Gradovi[gradComboBox.SelectedIndex],
+                    Prijava.kontejner.Gradovi[gradComboBox.SelectedIndex].getOpcine()[opcinaComboBox.SelectedIndex], 
+                    Prijava.kontejner.Gradovi[gradComboBox.SelectedIndex].getOpcine()[opcinaComboBox.SelectedIndex].getNaselja()[naseljeComboBox.SelectedIndex]
+                    , korisnickoIme, lozinka));
 
                 messageDialog("Uspješna registracija!");
                 this.Frame.Navigate(typeof(Prijava));
@@ -70,7 +74,16 @@ namespace e_market
         {
             for(int i = 0; i < Prijava.kontejner.Gradovi[gradComboBox.SelectedIndex].getOpcine().Count; i++)
             {
-                opcinaComboBox.Items.Add(Prijava.kontejner.Gradovi[i].getOpcine()[i].getNaziv());
+                opcinaComboBox.Items.Add(Prijava.kontejner.Gradovi[gradComboBox.SelectedIndex].getOpcine()[i].getNaziv());
+            }
+        }
+
+        private void opcinaComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            naseljeComboBox.Items.Clear();
+            for (int i = 0; i < Prijava.kontejner.Gradovi[gradComboBox.SelectedIndex].getOpcine()[opcinaComboBox.SelectedIndex].getNaselja().Count; i++)
+            {
+                naseljeComboBox.Items.Add(Prijava.kontejner.Gradovi[gradComboBox.SelectedIndex].getOpcine()[opcinaComboBox.SelectedIndex].getNaselja()[i].getNaziv());
             }
         }
     }

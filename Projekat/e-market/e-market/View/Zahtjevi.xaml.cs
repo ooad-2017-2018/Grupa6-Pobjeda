@@ -30,9 +30,9 @@ namespace e_market
         {
             int i = 0;
             if (i == 0)
-                this.Frame.Navigate(typeof(PocetniMeniMenadzer));
-            else
                 this.Frame.Navigate(typeof(PocetniMeniAdministrator));
+            else
+                this.Frame.Navigate(typeof(PocetniMeniMenadzer));
         }
     }
 }
