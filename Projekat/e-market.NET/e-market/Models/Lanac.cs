@@ -7,18 +7,25 @@ namespace e_market.Models
 {
     public class Lanac
     {
+        private static int brojac = 0;
         private String naziv;
-        private List<Supermarket> SupermarketId;
+
+        public int LanacId {get; set;}
+        public string Naziv { get => naziv; set => naziv = value; }
+        public List<Supermarket> SupermarketId { get; set; }
+
+        public virtual ICollection<Supermarket> Supermarket { get; set; }
 
         public Lanac(string naziv)
         {
+            LanacId = brojac++;
             Naziv = naziv;
-            SupermarketId1 = new List<Supermarket>()
+            SupermarketId = new List<Supermarket>();
         }
 
-        public string Naziv { get => naziv; set => naziv = value; }
-        public List<Supermarket> SupermarketId1 { get => SupermarketId; set => SupermarketId = value; }
-
-        public virtual Supermarket Supermarket { get; set; }
+        public void dodajSupermarket(Supermarket supermarket)
+        {
+            SupermarketId.Add(supermarket);
+        }
     }
 }

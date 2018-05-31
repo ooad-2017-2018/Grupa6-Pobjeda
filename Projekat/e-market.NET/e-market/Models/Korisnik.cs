@@ -7,6 +7,8 @@ namespace e_market.Models
 {
     public abstract class Korisnik
     {
+
+        private static int brojac = 0;
         private String ime;
         private String prezime;
         private String emailAdresa;
@@ -17,6 +19,7 @@ namespace e_market.Models
         private String korisnickoIme;
         private String lozinka;
 
+        public int KorisnikId {get; set;}
         public string Ime { get => ime; set => ime = value; }
         public string Prezime { get => prezime; set => prezime = value; }
         public string EmailAdresa { get => emailAdresa; set => emailAdresa = value; }
@@ -29,6 +32,7 @@ namespace e_market.Models
 
         public Korisnik(string ime, string prezime, string emailAdresa, string adresaStanovanja, Grad grad, Opcina opcina, Naselje naselje, string korisnickoIme, string lozinka)
         {
+            KorisnikId = brojac++;
             this.ime = ime;
             this.prezime = prezime;
             this.emailAdresa = emailAdresa;

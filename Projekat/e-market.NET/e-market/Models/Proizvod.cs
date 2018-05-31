@@ -7,5 +7,22 @@ namespace e_market.Models
 {
     public class Proizvod
     {
+        private static int brojac = 0;
+        private String naziv;
+
+        public int ProizvodId { get; set; }
+        public string Naziv { get => naziv; set => naziv = value; }
+
+        public Proizvod()
+        {
+            ProizvodId = brojac++;
+        }
+
+        public Proizvod(String naziv)
+        {
+            ProizvodId = brojac++;
+            Naziv = naziv;
+        }
+
     }
 }

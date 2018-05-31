@@ -7,13 +7,13 @@ namespace e_market.Models
 {
     public class Aplikacija
     {
-        private List<Lanac> LanacId;
-        private List<Korisnik> KorisnikId;
-        private List<Proizvod> ProizvodId;
+        public List<Lanac> LanacId { get; set; }
+        public List<Korisnik> KorisnikId { get; set; }
+        public List<Proizvod> ProizvodId { get; set; }
 
-        public List<Lanac> LanacId1 { get => LanacId; set => LanacId = value; }
-        public List<Korisnik> KorisnikId1 { get => KorisnikId; set => KorisnikId = value; }
-        public List<Proizvod> ProizvodId1 { get => ProizvodId; set => ProizvodId = value; }
+        public virtual ICollection<Lanac> Lanci { get; set; }
+        public virtual ICollection<Korisnik> Korisnici { get; set; }
+        public virtual ICollection<Proizvod> Proizvodi { get; set; }
 
         public Aplikacija()
         {
@@ -21,9 +21,20 @@ namespace e_market.Models
             KorisnikId = new List<Korisnik>();
             ProizvodId = new List<Proizvod>();
         }
-        
-        public virtual List<Lanac> Lanac { get; set; }
-        public virtual List<Korisnik> Korisnik{ get; set; }
-        public virtual List<Proizvod> Proizvod { get; set; }
+
+        public void dodajKorisnika(Korisnik korisnik)
+        {
+            KorisnikId.Add(korisnik);
+        }
+
+        public void dodajProizvod(Proizvod proizvod)
+        {
+            ProizvodId.Add(proizvod);
+        }
+
+        public void dodajLanac(Lanac lanac)
+        {
+            LanacId.Add(lanac);
+        }
     }
 }

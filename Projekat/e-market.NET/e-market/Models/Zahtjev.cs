@@ -7,19 +7,36 @@ namespace e_market.Models
 {
     public class Zahtjev
     {
-        private int ZahtjevId;
+        private static int brojac = 0;
         private String opis;
         private bool status;
-        private Uposlenik UposlenikId;
-        private Administrator AdministratorId;
 
-        public int ZahtjevId1 { get => ZahtjevId; set => ZahtjevId = value; }
+        public int ZahtjevId { get; set; }
+        public int UposlenikId { get; set; }
+        public int AdministratorId { get; set; }
         public string Opis { get => opis; set => opis = value; }
         public bool Status { get => status; set => status = value; }
-        public Uposlenik UposlenikId1 { get => UposlenikId; set => UposlenikId = value; }
-        public Administrator AdministratorId1 { get => AdministratorId; set => AdministratorId = value; }
 
         public virtual Uposlenik Uposlenik { get; set; }
         public virtual Administrator Administrator { get; set; }
+
+        public Zahtjev()
+        {
+            ZahtjevId = brojac++;
+        }
+        
+        public Zahtjev(int UposlenikId, int AdministratorId, string Opis)
+        {
+            ZahtjevId = brojac++;
+            this.UposlenikId = UposlenikId;
+            this.AdministratorId = AdministratorId;
+            this.Opis = Opis;
+            Status = false;
+        }
+
+        public void prihvatiZahtjev()
+        {
+            Status = true;
+        }
     }
 }
