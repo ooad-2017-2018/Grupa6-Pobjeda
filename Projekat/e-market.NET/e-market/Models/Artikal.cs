@@ -7,7 +7,7 @@ namespace e_market.Models
 {
     public class Artikal
     {
-        private static brojac = 0;
+        private static int brojac = 0;
 
         private String naziv;
         private double cijena;

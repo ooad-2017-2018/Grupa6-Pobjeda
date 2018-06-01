@@ -11,26 +11,26 @@ namespace e_market.Models
         private bool deaktiviran;
 
         public int AdministratorId { get; set; }
-        public List<Zahtjev> ZahtjevId { get; set; }
+        public List<int> ZahtjevId { get; set; }
         public bool Deaktiviran { get => deaktiviran; set => deaktiviran = value; }
 
-        public virtual ICollection<Zahtjev> Zahtjevi { get; set; }
+        public virtual ICollection<int> Zahtjevi { get; set; }
 
         public Administrator(): base()
         {
             AdministratorId = brojac++;
-            ZahtjevId = new List<Zahtjev>();
+            ZahtjevId = new List<int>();
         }
 
-        public Administrator(String ime, String prezime, String adresa, Grad grad, Opcina opcina, Naselje naselje, String korisnickoIme, String lanac, List<Zahtjev> zahtjevId1): 
-            base(ime, prezime, adresa, grad, opcina, naselje, korisnickoIme, lanac)
+        public Administrator(String ime, String prezime, String email, String adresa, Grad grad, Opcina opcina, Naselje naselje, String korisnickoIme, String lozinka, List<int> zahtjevi): 
+            base(ime, prezime, email, adresa, grad, opcina, naselje, korisnickoIme, lozinka)
         {
-            ZahtjevId = zahtjevId1;
+            ZahtjevId = zahtjevi;
             deaktiviran = false;
             AdministratorId = brojac++;
         }
 
-        public void dodajZahtjev(Zahtjev zahtjev)
+        public void dodajZahtjev(int zahtjev)
         {
             ZahtjevId.Add(zahtjev);
         }

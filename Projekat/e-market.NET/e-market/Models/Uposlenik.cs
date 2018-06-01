@@ -10,12 +10,12 @@ namespace e_market.Models
     {
         private static int brojac = 0;
 
-        public List<int> ZahtjevId { get; set; }
-        public int LanacId { get; set; }
+        public List<int> Zahtjevi { get; set; }
+        public int lanac { get; set; }
         public int UposlenikId { get; set; }
 
-        public Lanac Lanac { get => lanac; set => lanac = value; }
-        public virtual ICollection<Zahtjev> Zahtjevi { get; set; }
+        public int Lanac { get => lanac; set => lanac = value; }
+        public virtual ICollection<int> zahtjevi { get; set; }
 
         public Uposlenik()
         {
@@ -26,8 +26,8 @@ namespace e_market.Models
             : base(ime1, prezime1, emailAdresa1, adresaStanovanja1, grad1, opcina1, naselje1, korisnickoIme1, lozinka1)
         {
             UposlenikId = brojac++;
-            ZahtjevId = zahtjevi;
-            LanacId = lanac;
+            Zahtjevi = zahtjevi;
+            Lanac = lanac;
         }
     }
 }

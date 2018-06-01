@@ -10,9 +10,9 @@ namespace e_market.Models
         private static int brojac = 0;
         public int KlijentId { get; set; }
 
-        public Klijent(): base { }
-        public Klijent(String ime, String prezime, String adresa, Grad grad, Opcina opcina, Naselje naselje, String korisnickoIme, String lanac): 
-            base(ime, prezime, adresa, grad, opcina, naselje, korisnickoIme, lanac)
+        public Klijent(): base() { }
+        public Klijent(String ime, String prezime, String email, String adresa, Grad grad, Opcina opcina, Naselje naselje, String korisnickoIme, String lozinka) :
+            base(ime, prezime, email, adresa, grad, opcina, naselje, korisnickoIme, lozinka)
         {
             KlijentId = brojac++;
         }

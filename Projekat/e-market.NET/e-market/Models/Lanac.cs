@@ -12,18 +12,18 @@ namespace e_market.Models
 
         public int LanacId {get; set;}
         public string Naziv { get => naziv; set => naziv = value; }
-        public List<Supermarket> SupermarketId { get; set; }
+        public List<int> SupermarketId { get; set; }
 
-        public virtual ICollection<Supermarket> Supermarket { get; set; }
+        public virtual ICollection<int> Supermarket { get; set; }
 
         public Lanac(string naziv)
         {
             LanacId = brojac++;
             Naziv = naziv;
-            SupermarketId = new List<Supermarket>();
+            SupermarketId = new List<int>();
         }
 
-        public void dodajSupermarket(Supermarket supermarket)
+        public void dodajSupermarket(int supermarket)
         {
             SupermarketId.Add(supermarket);
         }

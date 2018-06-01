@@ -8,15 +8,13 @@ namespace e_market.Models
     public class ZahtjevZaRegistraciju: Zahtjev
     {
         private static int brojac = 0;
-
-        public int UposlenikId { get; set; }
+        
         public int ZahtjevZaRegistracijuId { get; set; }
-        public virtual Uposlenik Uposlenik { get; set; }
 
-        public ZahtjevZaRegistraciju(int UposlenikId) : base()
+        public ZahtjevZaRegistraciju(int UposlenikId, int AdministratorId, string Opis, Uposlenik u) : base(UposlenikId, AdministratorId, Opis)
         {
             ZahtjevZaRegistracijuId = brojac++;
-            this.UposlenikId = UposlenikId;
+            Uposlenik = u;
         }
     }
 }

@@ -10,24 +10,24 @@ namespace e_market.Models
         private static int brojac = 0;
         private String naziv { get; set; }
 
-        public Opcina OpcinaId { get; set; }
-        public List<Naselje> NaseljaId { get; set; }
+        public int OpcinaId { get; set; }
+        public List<int> NaseljaId { get; set; }
 
-        public virtual ICollection<Opcina> Opcine { get; set; }
+        public virtual ICollection<int> Opcine { get; set; }
 
         public Opcina()
         {
             OpcinaId = brojac++;
-            NaseljaId = new List<Naselje>();
+            NaseljaId = new List<int>();
         }
 
-        public Opcina(String naziv, List<Naselje> naselja)
+        public Opcina(String naziv, List<int> naselja)
         {
             OpcinaId = brojac++;
             NaseljaId = naselja;
         }
 
-        public void dodajNaselje(Naselje naselje)
+        public void dodajNaselje(int naselje)
         {
             NaseljaId.Add(naselje);
         }

@@ -30,6 +30,7 @@ namespace e_market.Models
         public string KorisnickoIme { get => korisnickoIme; set => korisnickoIme = value; }
         public string Lozinka { get => lozinka; set => lozinka = value; }
 
+        public Korisnik() { }
         public Korisnik(string ime, string prezime, string emailAdresa, string adresaStanovanja, Grad grad, Opcina opcina, Naselje naselje, string korisnickoIme, string lozinka)
         {
             KorisnikId = brojac++;
