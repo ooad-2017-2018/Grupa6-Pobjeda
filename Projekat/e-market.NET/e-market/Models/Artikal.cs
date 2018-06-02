@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -16,8 +17,11 @@ namespace e_market.Models
         public int ProizvodId { get; set; }
         public int ArtikalId { get; set; }
 
+        [Required]
         public string Naziv { get => naziv; set => naziv = value; }
+        [Required]
         public double Cijena { get => cijena; set => cijena = value; }
+        [Required]
         public int Kolicina { get => kolicina; set => kolicina = value; }
 
         public virtual Proizvod Proizvod { get; set; }

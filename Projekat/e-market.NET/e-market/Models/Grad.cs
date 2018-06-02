@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -12,6 +13,7 @@ namespace e_market.Models
         private String naziv;
 
         public int GradId { get; set; }
+        [Required]
         public string Naziv { get => naziv; set => naziv = value; }
         public List<Opcina> OpcinaId { get; set; }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,12 +9,13 @@ namespace e_market.Models
     public class Opcina
     {
         private static int brojac = 0;
-        private String naziv { get; set; }
+        [Required]
+        public String Naziv { get; set; }
 
         public int OpcinaId { get; set; }
         public List<int> NaseljaId { get; set; }
 
-        public virtual ICollection<int> Opcine { get; set; }
+        public virtual ICollection<Opcina> Opcine { get; set; }
 
         public Opcina()
         {
@@ -24,6 +26,7 @@ namespace e_market.Models
         public Opcina(String naziv, List<int> naselja)
         {
             OpcinaId = brojac++;
+            Naziv = naziv;
             NaseljaId = naselja;
         }
 

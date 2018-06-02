@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -11,11 +12,12 @@ namespace e_market.Models
         private static int brojac = 0;
 
         public List<int> Zahtjevi { get; set; }
+        [Required]
         public int lanac { get; set; }
         public int UposlenikId { get; set; }
 
-        public int Lanac { get => lanac; set => lanac = value; }
-        public virtual ICollection<int> zahtjevi { get; set; }
+        public virtual Lanac Lanac { get ; set; }
+        public virtual ICollection<Zahtjev> zahtjevi { get; set; }
 
         public Uposlenik()
         {
@@ -27,7 +29,7 @@ namespace e_market.Models
         {
             UposlenikId = brojac++;
             Zahtjevi = zahtjevi;
-            Lanac = lanac;
+            this.lanac = lanac;
         }
     }
 }

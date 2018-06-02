@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,6 +10,7 @@ namespace e_market.Models
     {
         private static int brojac = 0;
 
+        [Required]
         public int MenadzerId { get; set; }
         public int UposlenikSupermarketaId { get; set; }
 

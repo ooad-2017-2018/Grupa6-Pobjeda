@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -12,7 +13,9 @@ namespace e_market.Models
 
         public int SupermarketId { get; set; }
         public int GradId { get; set; }
+        [Required]
         public int OpcinaId { get; set; }
+        [Required]
         public int NaseljeId { get; set; }
         public List<int> UposlenikSupermarketaId { get; set; }
         public int MenadzerId { get; set; }

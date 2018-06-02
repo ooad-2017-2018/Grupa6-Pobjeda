@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,11 +9,10 @@ namespace e_market.Models
     public class Menadzer : Uposlenik
     {
         private static int brojac = 0;
-
         public int MenadzerId {get; set;}
         public List<int> SupermarketId { get; set; }
 
-        public virtual ICollection<int> Supermarketi { get; set;}
+        public virtual ICollection<Supermarket> Supermarketi { get; set;}
 
         public Menadzer(): base()
         {

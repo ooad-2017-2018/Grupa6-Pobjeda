@@ -14,7 +14,7 @@ namespace e_market.Models
         public List<int> ZahtjevId { get; set; }
         public bool Deaktiviran { get => deaktiviran; set => deaktiviran = value; }
 
-        public virtual ICollection<int> Zahtjevi { get; set; }
+        public virtual ICollection<Zahtjev> Zahtjevi { get; set; }
 
         public Administrator(): base()
         {
