@@ -22,7 +22,7 @@ namespace e_market.Models
             UposlenikId = brojac++;
         }
 
-        public Uposlenik(string ime1, string prezime1, string emailAdresa1, string adresaStanovanja1, Grad grad1, Opcina opcina1, Naselje naselje1, string korisnickoIme1, string lozinka1, int lanac, List<int> zahtjevi)
+        public Uposlenik(string ime1, string prezime1, string emailAdresa1, string adresaStanovanja1, int grad1, int opcina1, int naselje1, string korisnickoIme1, string lozinka1, int lanac, List<int> zahtjevi)
             : base(ime1, prezime1, emailAdresa1, adresaStanovanja1, grad1, opcina1, naselje1, korisnickoIme1, lozinka1)
         {
             UposlenikId = brojac++;

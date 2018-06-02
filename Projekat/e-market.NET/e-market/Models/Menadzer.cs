@@ -20,7 +20,7 @@ namespace e_market.Models
             SupermarketId = new List<int>();
         }
 
-        public Menadzer(String ime, String prezime, String email, String adresa, Grad grad, Opcina opcina, Naselje naselje, String korisnickoIme, String lozinka, int lanac, List<int> zahtjevi, List<int> supermarketi) :
+        public Menadzer(String ime, String prezime, String email, String adresa, int grad, int opcina, int naselje, String korisnickoIme, String lozinka, int lanac, List<int> zahtjevi, List<int> supermarketi) :
             base(ime, prezime, email, adresa, grad, opcina, naselje, korisnickoIme, lozinka, lanac, zahtjevi)
         {
             SupermarketId = supermarketi;

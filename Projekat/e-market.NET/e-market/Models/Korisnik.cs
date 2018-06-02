@@ -13,9 +13,9 @@ namespace e_market.Models
         private String prezime;
         private String emailAdresa;
         private String adresaStanovanja;
-        private Grad grad;
-        private Opcina opcina;
-        private Naselje naselje;
+        private int grad;
+        private int opcina;
+        private int naselje;
         private String korisnickoIme;
         private String lozinka;
 
@@ -24,14 +24,14 @@ namespace e_market.Models
         public string Prezime { get => prezime; set => prezime = value; }
         public string EmailAdresa { get => emailAdresa; set => emailAdresa = value; }
         public string AdresaStanovanja { get => adresaStanovanja; set => adresaStanovanja = value; }
-        public Grad Grad { get => grad; set => grad = value; }
-        public Opcina Opcina { get => opcina; set => opcina = value; }
-        public Naselje Naselje { get => naselje; set => naselje = value; }
+        public int Grad { get => grad; set => grad = value; }
+        public int Opcina { get => opcina; set => opcina = value; }
+        public int Naselje { get => naselje; set => naselje = value; }
         public string KorisnickoIme { get => korisnickoIme; set => korisnickoIme = value; }
         public string Lozinka { get => lozinka; set => lozinka = value; }
 
         public Korisnik() { }
-        public Korisnik(string ime, string prezime, string emailAdresa, string adresaStanovanja, Grad grad, Opcina opcina, Naselje naselje, string korisnickoIme, string lozinka)
+        public Korisnik(string ime, string prezime, string emailAdresa, string adresaStanovanja, int grad, int opcina, int naselje, string korisnickoIme, string lozinka)
         {
             KorisnikId = brojac++;
             this.ime = ime;

@@ -65,9 +65,38 @@ namespace e_market.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "First Name")]
+        public string Ime { get; set; }
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string Prezime { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "Address")]
+        public string Adresa { get; set;}
+
+        [Required]
+        [Display(Name = "City")]
+        public int Grad { get; set; }
+
+        [Required]
+        [Display(Name = "Municipality")]
+        public int Opcina { get; set; }
+
+        [Required]
+        [Display(Name = "Area")]
+        public int Naselje { get; set; }
+
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 4)]
+        [Display(Name = "Username")]
+        public string Username { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]

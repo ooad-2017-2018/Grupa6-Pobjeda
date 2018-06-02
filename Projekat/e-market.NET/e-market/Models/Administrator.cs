@@ -22,7 +22,7 @@ namespace e_market.Models
             ZahtjevId = new List<int>();
         }
 
-        public Administrator(String ime, String prezime, String email, String adresa, Grad grad, Opcina opcina, Naselje naselje, String korisnickoIme, String lozinka, List<int> zahtjevi): 
+        public Administrator(String ime, String prezime, String email, String adresa, int grad, int opcina, int naselje, String korisnickoIme, String lozinka, List<int> zahtjevi): 
             base(ime, prezime, email, adresa, grad, opcina, naselje, korisnickoIme, lozinka)
         {
             ZahtjevId = zahtjevi;
