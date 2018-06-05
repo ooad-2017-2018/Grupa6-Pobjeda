@@ -1,0 +1,14 @@
+-Singleton patern 
+Uloga Singleton paterna je da osigura da se klasa može instancirati samo jednom i da osigura globalni pristup kreiranoj instanci klase.
+Ovaj patern nije iskorišten u našoj aplikaciji, ali bi ga mogli iskoristiti kod slanja zahtjeva.
+
+-Adapter patern
+Osnovna namjena Adapter paterna je da omoguci širu upotrebu vec postojeæih klasa. Koristi se u situacijama kada je potreban drugaèiji interfejs veæ postojeæe klase,
+a ne želimo mijenjati postojeæu klasu. Adapter patern kreira novu adapter klasu koja služi kao posrednik izmedu originalne klase i željenog interfejsa.
+Tim postupkom se dobija željena funkcionalnost bez izmjena na originalnoj klasi i bez ugrožavanja integriteta cijele aplikacije. Adapter patern kreira novu adapter
+klasu koja služi kao posrednik izmedu originalne klase i željenog interfejsa.
+Ovaj patern nije iskorišten u našoj aplikaciji, ako bi zeljeli dodati nove funkcionalnosti mogli bi koristit i adapter klasu, da ne radimo modifikacije koda, nego njegovo proširenje.
+
+-Observer pattern
+Observer paterna omoguæava da se uspostavi relacija izmeðu objekata tako kada jedan objekat promijeni stanje, drugi zainteresirani objekti se obavještavaju.
+Ovaj patern nije iskorišten u našoj aplikaciji, ali bi ga mogli iskoristiti kod obavještavanja odobrenja registracije ili zahtjeva korisnika.
